@@ -1,8 +1,7 @@
-
 /*!
 
  =========================================================
- * Light Bootstrap Dashboard - v2.0.1 (Bootstrap 4)
+ * Light Bootstrap Dashboard - v1.4.0
  =========================================================
 
  * Product Page: http://www.creative-tim.com/product/light-bootstrap-dashboard
@@ -15,35 +14,26 @@
 
  */
 
-@import "lbd/_variables";
-@import "lbd/_mixins";
+@import "lbd/variables";
+@import "lbd/mixins";
 
-@import "lbd/_typography";
+@import "lbd/typography";
 
 // Core CSS
-@import "lbd/_misc";
-@import "lbd/_sidebar-and-main-panel";
-@import "lbd/_buttons";
-@import "lbd/_inputs";
+@import "lbd/misc";
+@import "lbd/sidebar-and-main-panel";
+@import "lbd/buttons";
+@import "lbd/inputs";
 
-@import "lbd/_alerts";
-@import "lbd/_tables";
+@import "lbd/alerts";
+@import "lbd/tables";
 
-@import "lbd/_checkbox-radio-switch";
-@import "lbd/_navbars";
-@import "lbd/_footers";
+@import "lbd/checkbox-radio-switch";
+@import "lbd/navbars";
+@import "lbd/footers";
 
 // Fancy Stuff
-@import "lbd/plugins/_animate";
-@import "lbd/_dropdown";
-@import "lbd/_cards";
-@import "lbd/_chartist";
-@import "lbd/_responsive";
-@import "lbd/_bootstrap-switch";
-
-// Nucleo Icons
-@import "lbd/_partial-nucleo-icons";
-strap-switch";
-
-// Nucleo Icons
-@import "lbd/partial-nucleo-icons";
+@import "lbd/dropdown";
+@import "lbd/cards";
+@import "lbd/chartist";
+@import "lbd/responsive";
