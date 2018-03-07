@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+
+    {% block content %}
+        <div id="map"></div>
+    {% endblock %}
+
+
+    {% block javascripts %}
+
+        {{ parent() }}
+
+        <script>
+            $().ready(function () {
+                demo.initGoogleMaps();
+            });
+        </script>
+
+    {% endblock %}

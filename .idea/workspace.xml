@@ -2,7 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1755258e-8d16-43e7-9c23-41b14e129e34" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/Pages/upgrade.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/fonts/nucleo-icons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/fonts/nucleo-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/fonts/nucleo-icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/fonts/nucleo-icons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/fonts/nucleo-icons.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/apple-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/core/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/core/jquery.3.2.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/core/popper.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/plugins/bootstrap-datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/plugins/bootstrap-notify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/plugins/bootstrap-switch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/plugins/chartist.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/js/plugins/nouislider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_bootstrap-switch.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_partial-nucleo-icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/plugins/_animate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/plugins/_datetime-picker.scss" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/Pages/icons.html" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/reports.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/Pages/maps.html" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/Pages/table.html" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/Pages/user.html" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Pages/notifications.html" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/notifications.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Pages/template.html" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Pages/typography.html" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/typography.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/assets/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/demo.css" afterPath="$PROJECT_DIR$/web/assets/css/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/light-bootstrap-dashboard.css" afterPath="$PROJECT_DIR$/web/assets/css/light-bootstrap-dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/demo.js" afterPath="$PROJECT_DIR$/web/assets/js/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/light-bootstrap-dashboard.js" afterPath="$PROJECT_DIR$/web/assets/js/light-bootstrap-dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_alerts.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_alerts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_buttons.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_cards.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_cards.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_checkbox-radio-switch.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_checkbox-radio-switch.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_dropdown.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_dropdown.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_footers.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_footers.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_misc.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_misc.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_mixins.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_navbars.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_navbars.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_responsive.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_responsive.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_sidebar-and-main-panel.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_sidebar-and-main-panel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_tables.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_tables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/_variables.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/mixins/_chartist.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/mixins/_chartist.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/lbd/mixins/_vendor-prefixes.scss" afterPath="$PROJECT_DIR$/web/assets/sass/lbd/mixins/_vendor-prefixes.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/sass/light-bootstrap-dashboard.scss" afterPath="$PROJECT_DIR$/web/assets/sass/light-bootstrap-dashboard.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,25 +64,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
-                <element signature="e#447#472#1#PHP" expanded="true" />
+                <element signature="e#452#479#1#PHP" expanded="true" />
+                <element signature="e#686#708#1#PHP" expanded="true" />
+                <element signature="e#914#936#1#PHP" expanded="true" />
+                <element signature="e#1154#1180#1#PHP" expanded="true" />
+                <element signature="e#1396#1421#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="303">
+              <caret line="256" column="0" lean-forward="true" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
               <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
+                <element signature="e#2014#2023#0#Twig" expanded="true" />
+                <element signature="e#3258#7797#0#Twig" expanded="false" />
+                <element signature="e#7858#9363#0#Twig" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -40,14 +96,33 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>../../../../../../../../Users/User/Desktop/light-bootstrap-dashboard-html-v2.0.1/BS3</find>
+      <find>../../../../web</find>
+      <find>popper</find>
+      <find>font</find>
+      <find>settings</find>
+      <find>pe-icon</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html" />
+        <option value="$PROJECT_DIR$/web/assets/css/demo.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig" />
+        <option value="$PROJECT_DIR$/web/assets/js/demo.js" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Pages/reports.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       </list>
     </option>
   </component>
@@ -107,6 +182,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -200,6 +315,58 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -214,6 +381,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\app\Resources\views\Pages" />
       <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\web" />
     </key>
   </component>
@@ -302,20 +470,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520443181548</updated>
-      <workItem from="1520443182993" duration="1245000" />
+      <workItem from="1520443182993" duration="6104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1245000" />
+    <option name="totallyTimeSpent" value="6104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22844176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -326,7 +496,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -352,20 +521,118 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="493">
+          <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/sass/lbd/_responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/pe-icon-7-stroke.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="104" column="15" lean-forward="false" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2431">
+          <caret line="143" column="11" lean-forward="false" selection-start-line="143" selection-start-column="11" selection-end-line="143" selection-end-column="11" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/reports.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21080">
+          <caret line="1240" column="11" lean-forward="false" selection-start-line="1240" selection-start-column="11" selection-end-line="1240" selection-end-column="11" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2193">
+          <caret line="129" column="11" lean-forward="false" selection-start-line="129" selection-start-column="11" selection-end-line="129" selection-end-column="11" />
+          <folding>
+            <element signature="e#13#27#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
-            <element signature="e#447#472#1#PHP" expanded="true" />
+            <element signature="e#452#479#1#PHP" expanded="true" />
+            <element signature="e#686#708#1#PHP" expanded="true" />
+            <element signature="e#914#936#1#PHP" expanded="true" />
+            <element signature="e#1154#1180#1#PHP" expanded="true" />
+            <element signature="e#1396#1421#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="256" column="0" lean-forward="true" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
+          <folding>
+            <element signature="e#2014#2023#0#Twig" expanded="true" />
+            <element signature="e#3258#7797#0#Twig" expanded="false" />
+            <element signature="e#7858#9363#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
