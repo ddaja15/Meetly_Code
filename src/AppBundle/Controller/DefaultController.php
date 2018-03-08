@@ -42,7 +42,11 @@ class DefaultController extends Controller
     public function employeeAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('Pages/employee.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $users = $em ->getRepository('AppBundle:User')->findAll();
+        return $this->render('Pages/employee.html.twig', [
+            'users'=>$users
+        ]);
     }
 
 

@@ -1,0 +1,17 @@
+AppBundle\Entity\User:
+  user_{1..10}:
+    username: '<username()>'
+    password: '<password()>'
+    name: '<firstName()>'
+    surname: '<lastName()>'
+    birthday: '<dateTimeBetween("-50 years","-18 years")>'
+    email: '<email()>'
+    phone_nr: '<phoneNumber()>'
+    is_admin: '<numberBetween(0,1)>'
+    role: '<role()>'
+    salary: '<numberBetween(20000,120000)>'
+    created_at: '<date_create()>'
+    updated_at: '<date_create()>'
+    last_loggin: '<dateTimeBetween("-50 years","-18 years")>'
+    fuel_consumption: '<numberBetween(0,10)>'
+
