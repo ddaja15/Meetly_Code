@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8"/>
     <title>{% block title %}Welcome!{% endblock %}</title>
-    {% block stylesheets %}{% endblock %}
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
-    <meta name="viewport" content="width=device-width"/>
+    {% block stylesheets %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+        <meta name="viewport" content="width=device-width"/>
 
-    <!-- Bootstrap core CSS     -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Bootstrap core CSS     -->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <!-- Animation library for notifications   -->
-    <link href="/assets/css/animate.min.css" rel="stylesheet"/>
+        <!-- Animation library for notifications   -->
+        <link href="/assets/css/animate.min.css" rel="stylesheet"/>
 
-    <!--  Light Bootstrap Table core CSS    -->
-    <link href="/assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
-    <link href="/assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+        <!--  Light Bootstrap Table core CSS    -->
+        <link href="/assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+        <link href="/assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
 
 
-    <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="{{ asset('assets/css/pe-icon-7-stroke.css') }}" rel="stylesheet"/>
+        <!--     Fonts and icons     -->
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+        <link href="{{ asset('assets/css/pe-icon-7-stroke.css') }}" rel="stylesheet"/>
 
-    <link href="{{ asset('assets/css/demo.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('assets/css/demo.css') }}" rel="stylesheet"/>
+    {% endblock %}
+
 
 </head>
 <body>
@@ -160,7 +162,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="{{ path('logout') }}">
                                         <p>Log out</p>
                                     </a>
                                 </li>
@@ -251,14 +253,16 @@
                 $(this).addClass('active');
             });
 
-            $.notify({
-                icon: 'pe-7s-gift',
-                message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
+            {% if user.name is defined%}
+                    $.notify({
+                        icon: 'pe-7s-gift',
+                        message: "Welcome {{ user.name }} {{ user.surname }}!"
 
-            }, {
-                type: 'info',
-                timer: 4000
-            });
+                    }, {
+                        type: 'info',
+                        timer: 4000
+                    });
+            {%  endif %}
 
         });
     </script>

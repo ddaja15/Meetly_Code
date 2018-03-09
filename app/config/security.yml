@@ -2,10 +2,17 @@
 # https://symfony.com/doc/current/security.html
 security:
 
+    encoders: #how to encrypt passwords on users
+      AppBundle\Entity\User: plaintext
+#        algorithm: sha512
+
+
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
-        in_memory:
-            memory: ~
+         db_provider: #any name you want
+                  entity:
+                    class: AppBundle:User
+                    property: username
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -15,10 +22,23 @@ security:
 
         main:
             anonymous: ~
-            # activate different ways to authenticate
 
-            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
-            #http_basic: ~
+            form_login:
+                login_path: login #route used to login users
+                check_path: login #check user credentials
+                default_target_path: / #where to redirect after logging in
+                always_use_default_target_path: true
 
-            # https://symfony.com/doc/current/security/form_login_setup.html
-            #form_login: ~
+            logout:
+                path: /logout #path of logout controller
+                target: / #target after logging out
+
+            remember_me:
+                secret:   '%kernel.secret%'
+                lifetime: 604800 # 1 week in seconds
+                name: user
+
+    access_control:
+      - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+      - { path: ^/, roles: IS_AUTHENTICATED_FULLY } #dont give access to any page unless fully logged in
+
