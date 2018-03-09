@@ -1,8 +1,174 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Map{% endblock %}
+{#{% block stylesheets %}#}
+{#{% endblock %}#}
+
+    {% block navbar %}
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Map</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="#" class="" data-toggle="modal" data-target="#myModal">
+                                <i class="fa fa-plus"></i>
+                                <p class="hidden-lg hidden-md">Map</p>
+                            </a>
+                        </li>
+                        <li>
+                        </li>
+
+                        <li>
+                            <a class="search-btn">
+                                <i class="fa fa-search"></i>
+                                <p class="hidden-lg hidden-md">Search</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="">
+                                <p>Account</p>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <p>
+                                    Dropdown
+                                    <b class="caret"></b>
+                                </p>
+
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Log out</p>
+                            </a>
+                        </li>
+                        <li class="separator hidden-lg"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    {% endblock %}
 
     {% block content %}
+        <input type="text" id="search-text" class="form-control" placeholder="Search">
+
         <div id="map"></div>
+
+
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+
+    {% block modal %}
+
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">New Job</h3>
+
+                        <div class="col-md-12">
+                            <div class="col-md-4"></div>
+                            <h4 class="progress-steps col-md-4" style="text-align: center;">Step 1 of 3</h4>
+                            <div class="col-md-4"></div>
+                        </div>
+
+                        <div class="progress col-md-12">
+                            <div class="progress-bar col-md-12" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 33%; border-radius: 25px; background-color: rgba(127, 255, 127, 0.4)">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-body" id="myWizard">
+
+
+
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="step1">
+
+                                <div class="well">
+
+                                    {#<label>Security Question 1</label>#}
+                                    {#<select class="form-control input-lg">#}
+                                        {#<option value="What was the name of your first pet?">What was the name of your first pet?</option>#}
+                                        {#<option value="Where did you first attend school?">Where did you first attend school?</option>#}
+                                        {#<option value="What is your mother's maiden name?">What is your mother's maiden name?</option>#}
+                                        {#<option value="What is your favorite car model?">What is your favorite car model?</option>#}
+                                    {#</select>#}
+                                    {#<br>#}
+                                    {#<label>Enter Response</label>#}
+                                    {#<input class="form-control input-lg">#}
+
+                                </div>
+
+
+                                <div class="modal-footer">
+                                    <button class="btn" aria-hidden="true" disabled>Back</button>
+                                    <a href="#step2" class="btn btn-primary" data-toggle="tab" data-step="2">Continue</a>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="step2">
+                                <div class="well">
+                                    <label>Security Question 2</label>
+                                    <select class="form-control  input-lg">
+                                        <option value="What was the name of your first pet?">What was the name of your first pet?</option>
+                                        <option selected="" value="Where did you first attend school?">Where did you first attend school?</option>
+                                        <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+                                        <option value="What is your favorite car model?">What is your favorite car model?</option>
+                                    </select>
+                                    <br>
+                                    <label>Enter Response</label>
+                                    <input class="form-control input-lg">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <a href="#step1" class="btn" data-toggle="tab" data-step="1">Back</a>
+                                    <a href="#step3" class="btn btn-primary" data-toggle="tab" data-step="3">Continue</a>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="step3">
+                                <div class="well"> <h2>Step 3</h2> Add another step here..</div>
+
+                                <div class="modal-footer">
+                                    <a href="#step2" class="btn" data-toggle="tab" data-step="2">Back</a>
+                                    <a href="" class="btn btn-danger" data-toggle="tab" data-step="3">Finish</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     {% endblock %}
 
 
@@ -11,9 +177,100 @@
         {{ parent() }}
 
         <script>
-            $().ready(function () {
-                demo.initGoogleMaps();
+            $(document).ready(function () {
+
+
+
+                // demo.initGoogleMaps();
+
+
+                var myLatlng = new google.maps.LatLng(41.3275, 19.8187);
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 13,
+                    center: myLatlng,
+                    scrollwheel: true, //we disable de scroll over the map, it is a really annoing when you scroll through page
+                    styles: [{"featureType":"water","stylers":[{"saturation":43},{"lightness":-11},{"hue":"#0088ff"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"hue":"#ff0000"},{"saturation":-100},{"lightness":99}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#808080"},{"lightness":54}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ece2d9"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#ccdca1"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#767676"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#b8cb93"}]},{"featureType":"poi.park","stylers":[{"visibility":"on"}]},{"featureType":"poi.sports_complex","stylers":[{"visibility":"on"}]},{"featureType":"poi.medical","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","stylers":[{"visibility":"simplified"}]}]
+
+                });
+
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    title:"Hello Tirana!"
+                });
+
+                // To add the marker to the map, call setMap();
+                marker.setMap(map);
+
+                var geocoder = new google.maps.Geocoder();
+
+                // Geocoding
+                $('.search-btn').click(function () {
+
+                    geocodeAddress(geocoder, map);
+
+                });
+
+                // $('li > a').click(function() {
+                //     $('li').removeClass();
+                //     $('.map-active').addClass('active');
+                // });
+
+
+                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+                    //update progress
+                    var step = $(e.target).data('step');
+                    var percent = (parseInt(step) / 3) * 100;
+
+
+                    if(parseInt(step) === 1){
+
+                        color = 'rgba(127, 255, 127, 0.4)';
+
+                    } else if(parseInt(step) === 2) {
+                        color = 'rgba(127, 255, 127, 0.8)';
+
+                    } else {
+                        color = 'rgba(127, 255, 127, 1)';
+                    }
+
+                    $('.progress-bar').css({width: percent + '%', backgroundColor: color});
+                    $('.progress-steps').text("Step " + step + " of 3");
+
+                    //e.relatedTarget // previous tab
+                })
+
+                $('.first').click(function(){
+
+                    $('#myWizard a:first').tab('show')
+
+                })
             });
+
+            // Geocoding
+            function geocodeAddress(geocoder, resultsMap) {
+                var address = document.getElementById('search-text').value;
+                geocoder.geocode({'address': address}, function(results, status) {
+                    if (status === 'OK') {
+                        resultsMap.setCenter(results[0].geometry.location);
+                        var marker = new google.maps.Marker({
+                            map: resultsMap,
+                            position: results[0].geometry.location
+                        });
+                    } else {
+                        alert('Error: ' + status);
+                    }
+                });
+            }
+
+
+
+
+
         </script>
 
     {% endblock %}
+
+
+
