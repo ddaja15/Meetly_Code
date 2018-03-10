@@ -34,61 +34,62 @@
     <div class="wrapper">
 
         {% block sidebar %}
-        <div class="sidebar" data-color="blue" data-image="assets/img/sidebar-5.jpg">
+            <div class="sidebar" data-color="dark" data-image="https://swimmingworld.azureedge.net/news/wp-content/uploads/2015/01/job.jpg">
 
-            <!--
+                <!--
 
-                Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
-                Tip 2: you can also add an image using data-image tag
+                    Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+                    Tip 2: you can also add an image using data-image tag
 
-            -->
+                -->
 
-            <div class="sidebar-wrapper">
-                <div class="logo">
-                    <a href="http://www.epoka.edu.al" class="simple-text">
-                        Meetly
-                    </a>
+                <div class="sidebar-wrapper">
+                    <div class="logo">
+                        <a href="http://www.epoka.edu.al" class="simple-text">
+                            {#<p style="padding: 5px 0px;display: block;font-size: 18px;color: #FFFFFF;text-align: center;font-weight: 400;line-height: 30px;"></p>#}
+                            MeetLY
+                        </a>
+                    </div>
+
+                    <ul class="nav">
+                        <li>
+                            <a href="{{ path('dashboard') }}">
+                                <i class="pe-7s-graph"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('maps') }}">
+                                <i class="pe-7s-map-marker"></i>
+                                <p>Maps</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('employee') }}">
+                                <i class="pe-7s-user"></i>
+                                <p>Employees</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path('reports') }}">
+                                <i class="pe-7s-note2"></i>
+                                <p>Reports</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path('user') }}">
+                                <i class="pe-7s-settings"></i>
+                                <p>Settings</p>
+                            </a>
+                        </li>
+
+
+                    </ul>
                 </div>
-
-                <ul class="nav">
-                    <li class="active">
-                        <a href="{{ path('dashboard') }}">
-                            <i class="pe-7s-graph"></i>
-                            <p>Dashboard</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ path('maps') }}">
-                            <i class="pe-7s-map-marker"></i>
-                            <p>Maps</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ path('employee') }}">
-                            <i class="pe-7s-user"></i>
-                            <p>Employees</p>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="{{ path('reports') }}">
-                            <i class="pe-7s-note2"></i>
-                            <p>Reports</p>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="{{ path('user') }}">
-                            <i class="pe-7s-settings"></i>
-                            <p>Settings</p>
-                        </a>
-                    </li>
-
-
-                </ul>
             </div>
-        </div>
-    {% endblock %}
+        {% endblock %}
 
         <div class="main-panel">
             {% block navbar %}
@@ -138,11 +139,11 @@
                             </ul>
 
                             <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <a href="">
-                                        <p>Account</p>
-                                    </a>
-                                </li>
+                                {#<li>#}
+                                {#<a href="">#}
+                                {#<p>Account</p>#}
+                                {#</a>#}
+                                {#</li>#}
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         <p>
@@ -251,21 +252,23 @@
 
             demo.initChartist();
 
-            $('.sidebar-wrapper').on('click','li',function(){
+            $('.sidebar-wrapper').on('click', 'li', function () {
                 $(".active").removeClass('active');
                 $(this).addClass('active');
+                console.log($(".active"));
+                console.log($(this));
             });
 
-            {% if user.name is defined%}
-                    $.notify({
-                        icon: 'pe-7s-gift',
-                        message: "Welcome {{ user.name }} {{ user.surname }}!"
+            {% if user.name is defined %}
+            $.notify({
+                icon: 'pe-7s-users',
+                message: "Welcome {{ user.name }} {{ user.surname }}!"
 
-                    }, {
-                        type: 'info',
-                        timer: 4000
-                    });
-            {%  endif %}
+            }, {
+                type: 'info',
+                timer: 4000
+            });
+            {% endif %}
 
         });
     </script>

@@ -37,11 +37,11 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="">
-                                <p>Account</p>
-                            </a>
-                        </li>
+                        {#<li>#}
+                            {#<a href="">#}
+                                {#<p>Account</p>#}
+                            {#</a>#}
+                        {#</li>#}
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <p>
@@ -61,7 +61,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{ path('logout') }}">
                                 <p>Log out</p>
                             </a>
                         </li>
@@ -85,84 +85,64 @@
 
     {% block modal %}
 
-        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h3 id="myModalLabel">New Job</h3>
+                        <center>
+                            <h3 id="myModalLabel">Create a New Job</h3>
+                        </center>
+                        <hr>
 
                         <div class="col-md-12">
                             <div class="col-md-4"></div>
-                            <h4 class="progress-steps col-md-4" style="text-align: center;">Step 1 of 3</h4>
+                            <h4 class="progress-steps col-md-12" style="text-align: center;">Step 1 of 3</h4>
                             <div class="col-md-4"></div>
                         </div>
 
-                        <div class="progress col-md-12">
-                            <div class="progress-bar col-md-12" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 33%; border-radius: 25px; background-color: rgba(127, 255, 127, 0.4)">
+                        <div class="progress col-md-12"
+                             style="background-color: transparent;background: none;margin-bottom: 0;height: 25px;width: 100%;box-shadow: none">
+                            <div class="progress-bar col-md-12" role="progressbar" aria-valuenow="1" aria-valuemin="1"
+                                 aria-valuemax="4"
+                                 style="width: 33%; border-radius: 25px; background-color: rgba(127, 255, 127, 0.4)">
                             </div>
                         </div>
 
                     </div>
+
                     <div class="modal-body" id="myWizard">
 
-
-
-
                         <div class="tab-content">
+
                             <div class="tab-pane fade in active" id="step1">
-
-                                <div class="well">
-
-                                    {#<label>Security Question 1</label>#}
-                                    {#<select class="form-control input-lg">#}
-                                        {#<option value="What was the name of your first pet?">What was the name of your first pet?</option>#}
-                                        {#<option value="Where did you first attend school?">Where did you first attend school?</option>#}
-                                        {#<option value="What is your mother's maiden name?">What is your mother's maiden name?</option>#}
-                                        {#<option value="What is your favorite car model?">What is your favorite car model?</option>#}
-                                    {#</select>#}
-                                    {#<br>#}
-                                    {#<label>Enter Response</label>#}
-                                    {#<input class="form-control input-lg">#}
-
-                                </div>
-
-
+                                <div class="well"><h2>Step 1</h2> Add another step here..</div>
                                 <div class="modal-footer">
                                     <button class="btn" aria-hidden="true" disabled>Back</button>
-                                    <a href="#step2" class="btn btn-primary" data-toggle="tab" data-step="2">Continue</a>
+                                    <a href="#step2" class="btn btn-primary" data-toggle="tab"
+                                       data-step="2">Continue</a>
                                 </div>
-
                             </div>
-                            <div class="tab-pane fade" id="step2">
-                                <div class="well">
-                                    <label>Security Question 2</label>
-                                    <select class="form-control  input-lg">
-                                        <option value="What was the name of your first pet?">What was the name of your first pet?</option>
-                                        <option selected="" value="Where did you first attend school?">Where did you first attend school?</option>
-                                        <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
-                                        <option value="What is your favorite car model?">What is your favorite car model?</option>
-                                    </select>
-                                    <br>
-                                    <label>Enter Response</label>
-                                    <input class="form-control input-lg">
-                                </div>
 
+                            <div class="tab-pane fade" id="step2">
+                                <div class="well"><h2>Step 2</h2> Add another step here..</div>
                                 <div class="modal-footer">
                                     <a href="#step1" class="btn" data-toggle="tab" data-step="1">Back</a>
-                                    <a href="#step3" class="btn btn-primary" data-toggle="tab" data-step="3">Continue</a>
+                                    <a href="#step3" class="btn btn-primary" data-toggle="tab"
+                                       data-step="3">Continue</a>
                                 </div>
-
                             </div>
+
                             <div class="tab-pane fade" id="step3">
-                                <div class="well"> <h2>Step 3</h2> Add another step here..</div>
+                                <div class="well"><h2>Step 3</h2> Add another step here..</div>
 
                                 <div class="modal-footer">
                                     <a href="#step2" class="btn" data-toggle="tab" data-step="2">Back</a>
                                     <a href="" class="btn btn-danger" data-toggle="tab" data-step="3">Finish</a>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -190,13 +170,53 @@
                     zoom: 13,
                     center: myLatlng,
                     scrollwheel: true, //we disable de scroll over the map, it is a really annoing when you scroll through page
-                    styles: [{"featureType":"water","stylers":[{"saturation":43},{"lightness":-11},{"hue":"#0088ff"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"hue":"#ff0000"},{"saturation":-100},{"lightness":99}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#808080"},{"lightness":54}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ece2d9"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#ccdca1"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#767676"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#b8cb93"}]},{"featureType":"poi.park","stylers":[{"visibility":"on"}]},{"featureType":"poi.sports_complex","stylers":[{"visibility":"on"}]},{"featureType":"poi.medical","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","stylers":[{"visibility":"simplified"}]}]
+                    styles: [{
+                        "featureType": "water",
+                        "stylers": [{"saturation": 43}, {"lightness": -11}, {"hue": "#0088ff"}]
+                    }, {
+                        "featureType": "road",
+                        "elementType": "geometry.fill",
+                        "stylers": [{"hue": "#ff0000"}, {"saturation": -100}, {"lightness": 99}]
+                    }, {
+                        "featureType": "road",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{"color": "#808080"}, {"lightness": 54}]
+                    }, {
+                        "featureType": "landscape.man_made",
+                        "elementType": "geometry.fill",
+                        "stylers": [{"color": "#ece2d9"}]
+                    }, {
+                        "featureType": "poi.park",
+                        "elementType": "geometry.fill",
+                        "stylers": [{"color": "#ccdca1"}]
+                    }, {
+                        "featureType": "road",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{"color": "#767676"}]
+                    }, {
+                        "featureType": "road",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{"color": "#ffffff"}]
+                    }, {"featureType": "poi", "stylers": [{"visibility": "off"}]}, {
+                        "featureType": "landscape.natural",
+                        "elementType": "geometry.fill",
+                        "stylers": [{"visibility": "on"}, {"color": "#b8cb93"}]
+                    }, {
+                        "featureType": "poi.park",
+                        "stylers": [{"visibility": "on"}]
+                    }, {
+                        "featureType": "poi.sports_complex",
+                        "stylers": [{"visibility": "on"}]
+                    }, {
+                        "featureType": "poi.medical",
+                        "stylers": [{"visibility": "on"}]
+                    }, {"featureType": "poi.business", "stylers": [{"visibility": "simplified"}]}]
 
                 });
 
                 var marker = new google.maps.Marker({
                     position: myLatlng,
-                    title:"Hello Tirana!"
+                    title: "Hello Tirana!"
                 });
 
                 // To add the marker to the map, call setMap();
@@ -224,11 +244,11 @@
                     var percent = (parseInt(step) / 3) * 100;
 
 
-                    if(parseInt(step) === 1){
+                    if (parseInt(step) === 1) {
 
                         color = 'rgba(127, 255, 127, 0.4)';
 
-                    } else if(parseInt(step) === 2) {
+                    } else if (parseInt(step) === 2) {
                         color = 'rgba(127, 255, 127, 0.8)';
 
                     } else {
@@ -241,7 +261,7 @@
                     //e.relatedTarget // previous tab
                 })
 
-                $('.first').click(function(){
+                $('.first').click(function () {
 
                     $('#myWizard a:first').tab('show')
 
@@ -251,7 +271,7 @@
             // Geocoding
             function geocodeAddress(geocoder, resultsMap) {
                 var address = document.getElementById('search-text').value;
-                geocoder.geocode({'address': address}, function(results, status) {
+                geocoder.geocode({'address': address}, function (results, status) {
                     if (status === 'OK') {
                         resultsMap.setCenter(results[0].geometry.location);
                         var marker = new google.maps.Marker({
@@ -263,9 +283,6 @@
                     }
                 });
             }
-
-
-
 
 
         </script>
