@@ -15,8 +15,8 @@ class DefaultController extends Controller
     public function dashboardAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('Pages/dashboard.html.twig',[
-            'user'=>$this->getUser()
+        return $this->render('Pages/dashboard.html.twig', [
+            'user' => $this->getUser()
         ]);
     }
 
@@ -44,7 +44,9 @@ class DefaultController extends Controller
     public function userAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('Pages/user.html.twig');
+        return $this->render('Pages/user.html.twig',[
+            'user'=>$this->getUser()
+        ]);
     }
 
     /**
@@ -54,9 +56,9 @@ class DefaultController extends Controller
     {
         // replace this example code with whatever you need
         $em = $this->getDoctrine()->getManager();
-        $users = $em ->getRepository('AppBundle:User')->findAll();
+        $users = $em->getRepository('AppBundle:User')->findAll();
         return $this->render('Pages/employee.html.twig', [
-            'users'=>$users
+            'users' => $users
         ]);
     }
 
@@ -69,4 +71,8 @@ class DefaultController extends Controller
         // replace this example code with whatever you need
         return $this->render('Pages/reports.html.twig');
     }
+
+
+
+
 }
