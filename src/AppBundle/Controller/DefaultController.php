@@ -25,8 +25,17 @@ class DefaultController extends Controller
      */
     public function mapsAction(Request $request)
     {
+
+        $em = $this->getDoctrine()->getManager();
+        $sql="select * from user where is_admin='0'";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $users = $stmt->fetchAll();
+
         // replace this example code with whatever you need
-        return $this->render('Pages/maps.html.twig');
+        return $this->render('Pages/maps.html.twig', [
+            'users'=>$users,
+        ]);
     }
 
     /**
@@ -60,8 +69,4 @@ class DefaultController extends Controller
         // replace this example code with whatever you need
         return $this->render('Pages/reports.html.twig');
     }
-
-
-
-
 }
