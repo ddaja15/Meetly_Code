@@ -565,7 +565,6 @@ input:focus {
 }
 
 .btn {
-    border-width: 2px;
     background-color: transparent;
     font-weight: 400;
     opacity: 0.8;

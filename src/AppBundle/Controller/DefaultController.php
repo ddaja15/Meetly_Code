@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Job;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -70,6 +71,35 @@ class DefaultController extends Controller
     {
         // replace this example code with whatever you need
         return $this->render('Pages/reports.html.twig');
+    }
+
+
+    /**
+     * @Route("/add/job",name="addJob")
+     */
+    public function addJobAction(Request $request){
+
+        $job = new Job();
+
+        $job->setTitle($request->request->get('job-title'));
+        $job->setUser(15);
+        $job->setDeadline($request->request->get('job-deadline'));
+        $job->setPriority($request->request->get('job-priority'));
+        $job->setReward($request->request->get('job-reward'));
+        $job->setJobDiff($request->request->get('job-difficulty'));
+        $job->setDescription($request->request->get('job-desc'));
+
+        $job->setForm($request->request->get('json-form'));
+        $job->setLat($request->request->get('latitude'));
+        $job->setLng($request->request->get('longitude'));
+
+        $em = $this->getDoctrine()->getManager();
+
+        $em->persist($job);
+        $em->flush();
+
+        return true;
+
     }
 
 

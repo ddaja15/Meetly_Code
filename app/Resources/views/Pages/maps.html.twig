@@ -1,8 +1,15 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Map{% endblock %}
-{#{% block stylesheets %}#}
-{#{% endblock %}#}
+{% block stylesheets %}
+    {{ parent() }}
+
+
+    <link href="{{ asset('assets/css/dynamicForm.css') }}" rel="stylesheet"/>
+
+
+
+{% endblock %}
 
 
     {% block navbar %}
@@ -77,8 +84,17 @@
 
     {% block content %}
         <input type="text" id="search-text" class="form-control" placeholder="Search">
-
+        <div class="finalize-btn" style="display: none; position: absolute; bottom: 40px; width: 100%; z-index:2000;">
+            <div class="col-md-3"></div>
+            <button class="btn col-md-6" style="background-color: firebrick; color: white;text-transform: uppercase;letter-spacing: 1px; border-radius: 25px;">Finalize</button>
+            <div class="col-md-3"></div>
+        </div>
         <div id="map"></div>
+
+
+
+
+
 
 
     {% endblock %}
@@ -120,91 +136,87 @@
                             </div>
 
                             <div class="tab-pane fade in active" id="step1">
-                                {#<div class="well"><h2>Step 1</h2> Add another step here..</div>#}
 
                                 <div class="card" style="margin-bottom: 0px !important;">
                                     <div class="header">
                                         <h4 class="title">General Information</h4>
                                     </div>
                                     <div class="content">
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label>Title</label>
-                                                        <input type="text" class="form-control" placeholder="Title">
-                                                    </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Title</label>
+                                                    <input id="job-title" type="text" class="form-control" placeholder="Title">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Employee</label>
+                                                    {#<input type="text" class="form-control" placeholder="Employee">#}
+                                                    <input id="job-employee" list="employee" type="text" placeholder="Employee"  class="form-control col-md-12">
+                                                    <datalist id="employee">
+
+                                                        {% for user in users %}
+                                                            <option value="{{ user.name }} {{ user.surname }}">
+                                                        {% endfor %}
+
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Deadline</label>
+                                                    <input id="job-deadline" type="datetime-local" placeholder="Deadline" class="form-control">
                                                 </div>
                                             </div>
 
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label>Employee</label>
-                                                        {#<input type="text" class="form-control" placeholder="Employee">#}
-                                                        <input list="employee" type="text" placeholder="Employee"  class="form-control col-md-12">
-                                                        <datalist id="employee">
-
-                                                            {% for user in users %}
-                                                                <option value="{{ user.name }} {{ user.surname }}">
-                                                            {% endfor %}
-
-                                                        </datalist>
-                                                    </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Job Priority</label>
+                                                    <select class="form-control" id="job-priority">
+                                                        <option>High</option>
+                                                        <option>Medium</option>
+                                                        <option>Low</option>
+                                                    </select>
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Deadline</label>
-                                                        <input type="datetime-local" placeholder="Deadline" class="form-control">
-                                                    </div>
-                                                </div>
 
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Job Priority</label>
-                                                        <select class="form-control" id="priority">
-                                                            <option>High</option>
-                                                            <option>Medium</option>
-                                                            <option>Low</option>
-                                                        </select>
-                                                    </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Reward</label>
+                                                    <input id="job-reward" min="0" type="number" class="form-control" placeholder="Reward">
                                                 </div>
                                             </div>
-
-
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Reward</label>
-                                                        <input min="0" type="number" class="form-control" placeholder="Reward">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>Job Difficulty</label>
-                                                        <select class="form-control" id="priority">
-                                                            <option>Easy</option>
-                                                            <option>Challenging</option>
-                                                            <option>Hard</option>
-                                                            <option>Extreme</option>
-                                                        </select>
-                                                    </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Job Difficulty</label>
+                                                    <select class="form-control" id="job-difficulty">
+                                                        <option>Easy</option>
+                                                        <option>Challenging</option>
+                                                        <option>Hard</option>
+                                                        <option>Extreme</option>
+                                                    </select>
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label>Description</label>
-                                                        <textarea rows="2" style="resize:none" class="form-control" placeholder="Enter your description"></textarea>
-                                                    </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Description</label>
+                                                    <textarea id="job-desc" rows="2" style="resize:none" class="form-control" placeholder="Enter your description"></textarea>
                                                 </div>
                                             </div>
-                                            {#<div class="clearfix"></div>#}
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -217,7 +229,42 @@
                             </div>
 
                             <div class="tab-pane fade" id="step2">
-                                <div class="well"><h2>Step 2</h2> Add another step here..</div>
+
+                                <div class="card" style="margin-bottom: 0px !important;">
+                                    {#<div class="header">#}
+                                        {#<h4 class="title">Dynamic Form</h4>#}
+                                    {#</div>#}
+                                    <div class="content">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <div class="col-md-2"></div>
+                                                    {#<button class="btn col-md-8" id="addAnotherSection" style="position: absolute;top:10px;left:70px">Add Section</button>#}
+                                                    <div class="col-md-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="flex-container">
+                                                <div class="flex-item">
+                                                    <div id="mainContainer"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <div class="col-md-4"></div>
+                                                 <button class="btn col-md-4" id="addAnotherSection" style="text-align: center;margin-top: 10px" >Add Section</button>
+                                                <div class="col-md-4"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="modal-footer">
                                     <div class="col-md-1"></div>
                                     <a href="#step1" class="btn col-md-5" data-toggle="tab" data-step="1">Back</a>
@@ -228,12 +275,24 @@
                             </div>
 
                             <div class="tab-pane fade" id="step3">
-                                <div class="well"><h2>Step 3</h2> Add another step here..</div>
 
+                                <div class="card" style="margin-bottom: 0px !important;">
+                                    <div class="content">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Job Address</label>
+                                                    <input type="text" id="search-text-modal" class="form-control" placeholder="Job Address">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="modal-footer">
                                     <div class="col-md-1"></div>
                                     <a href="#step2" class="btn col-md-5" data-toggle="tab" data-step="2">Back</a>
-                                    <a href="" class="btn btn-danger col-md-5" data-toggle="tab" data-step="3">Finish</a>
+                                    <a href="" class="btn btn-danger col-md-5 search-btn-modal" data-dismiss="modal" data-toggle="tab" data-step="3">Finish</a>
+
                                     <div class="col-md-1"></div>
                                 </div>
                             </div>
@@ -251,136 +310,22 @@
 
         {{ parent() }}
 
-        <script>
-            $(document).ready(function () {
+        <script src="{{ asset('assets/js/map/map.js') }}"></script>
 
 
+        {#<script>#}
+            {#// $(document).ready(function () {#}
+            {#//#}
+            {#//#}
+            {#//#}
+            {#//     // demo.initGoogleMaps();#}
+            {#//#}
+            {#//#}
+            {#//   #}
+            {#// });#}
+         {##}
 
-                // demo.initGoogleMaps();
-
-
-                var myLatlng = new google.maps.LatLng(41.3275, 19.8187);
-
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 13,
-                    center: myLatlng,
-                    scrollwheel: true, //we disable de scroll over the map, it is a really annoing when you scroll through page
-                    styles: [{
-                        "featureType": "water",
-                        "stylers": [{"saturation": 43}, {"lightness": -11}, {"hue": "#0088ff"}]
-                    }, {
-                        "featureType": "road",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"hue": "#ff0000"}, {"saturation": -100}, {"lightness": 99}]
-                    }, {
-                        "featureType": "road",
-                        "elementType": "geometry.stroke",
-                        "stylers": [{"color": "#808080"}, {"lightness": 54}]
-                    }, {
-                        "featureType": "landscape.man_made",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"color": "#ece2d9"}]
-                    }, {
-                        "featureType": "poi.park",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"color": "#ccdca1"}]
-                    }, {
-                        "featureType": "road",
-                        "elementType": "labels.text.fill",
-                        "stylers": [{"color": "#767676"}]
-                    }, {
-                        "featureType": "road",
-                        "elementType": "labels.text.stroke",
-                        "stylers": [{"color": "#ffffff"}]
-                    }, {"featureType": "poi", "stylers": [{"visibility": "off"}]}, {
-                        "featureType": "landscape.natural",
-                        "elementType": "geometry.fill",
-                        "stylers": [{"visibility": "on"}, {"color": "#b8cb93"}]
-                    }, {
-                        "featureType": "poi.park",
-                        "stylers": [{"visibility": "on"}]
-                    }, {
-                        "featureType": "poi.sports_complex",
-                        "stylers": [{"visibility": "on"}]
-                    }, {
-                        "featureType": "poi.medical",
-                        "stylers": [{"visibility": "on"}]
-                    }, {"featureType": "poi.business", "stylers": [{"visibility": "simplified"}]}]
-
-                });
-
-                var marker = new google.maps.Marker({
-                    position: myLatlng,
-                    title: "Hello Tirana!"
-                });
-
-                // To add the marker to the map, call setMap();
-                marker.setMap(map);
-
-                var geocoder = new google.maps.Geocoder();
-
-                // Geocoding
-                $('.search-btn').click(function () {
-
-                    geocodeAddress(geocoder, map);
-
-                });
-
-                // $('li > a').click(function() {
-                //     $('li').removeClass();
-                //     $('.map-active').addClass('active');
-                // });
-
-
-                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-
-                    //update progress
-                    var step = $(e.target).data('step');
-                    var percent = (parseInt(step) / 3) * 100;
-
-
-                    if (parseInt(step) === 1) {
-
-                        color = 'rgba(127, 255, 127, 0.4)';
-
-                    } else if (parseInt(step) === 2) {
-                        color = 'rgba(127, 255, 127, 0.8)';
-
-                    } else {
-                        color = 'rgba(127, 255, 127, 1)';
-                    }
-
-                    $('.progress-bar').css({width: percent + '%', backgroundColor: color});
-                    $('.progress-steps').text("Step " + step + " of 3");
-
-                    //e.relatedTarget // previous tab
-                })
-
-                $('.first').click(function () {
-
-                    $('#myWizard a:first').tab('show')
-
-                })
-            });
-
-            // Geocoding
-            function geocodeAddress(geocoder, resultsMap) {
-                var address = document.getElementById('search-text').value;
-                geocoder.geocode({'address': address}, function (results, status) {
-                    if (status === 'OK') {
-                        resultsMap.setCenter(results[0].geometry.location);
-                        var marker = new google.maps.Marker({
-                            map: resultsMap,
-                            position: results[0].geometry.location
-                        });
-                    } else {
-                        alert('Error: ' + status);
-                    }
-                });
-            }
-
-
-        </script>
+        {#</script>#}
 
     {% endblock %}
 
