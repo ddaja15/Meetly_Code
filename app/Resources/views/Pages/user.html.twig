@@ -12,24 +12,24 @@
                                 <h4 class="title">Edit Profile</h4>
                             </div>
                             <div class="content">
-                                <form>
+                                <form action="{{ path('update') }}" method="POST">
                                     <div class="row">
-                                        <div class="col-md-5">
+                                        <div class="col-md-4">
                                             <div class="form-group">
                                                 <label>Company (disabled)</label>
-                                                <input type="text" class="form-control" disabled placeholder="Company" value="Creative Code Inc.">
+                                                <input type="text" class="form-control" disabled placeholder="Company" value="Software Engineering Inc.">
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-4">
                                             <div class="form-group">
                                                 <label>Username</label>
-                                                <input type="text" class="form-control" placeholder="Username" value="michael23">
+                                                <input type="text" name="username" class="form-control" placeholder="Username" value="{{ user.username }}" style="pointer-events:none;background:#F5F5F5;cursor: not-allowed;">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" placeholder="Email">
+                                                <input type="email" name="email" class="form-control" placeholder="Email" value="{{ user.email }}" required>
                                             </div>
                                         </div>
                                     </div>
@@ -38,13 +38,13 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>First Name</label>
-                                                <input type="text" class="form-control" placeholder="Company" value="Mike">
+                                                <input type="text" name="name" class="form-control" placeholder="Company" value="{{ user.name }}" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Last Name</label>
-                                                <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                                                <input type="text" name="surname" class="form-control" placeholder="Last Name" value="{{ user.surname }}" required>
                                             </div>
                                         </div>
                                     </div>
@@ -52,8 +52,8 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label>Address</label>
-                                                <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                                <label>Phone Number</label>
+                                                <input type="text" name="phone_nr" class="form-control" placeholder="Birthday" value="{{ user.getPhoneNr }}" required>
                                             </div>
                                         </div>
                                     </div>
@@ -61,34 +61,40 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label>City</label>
-                                                <input type="text" class="form-control" placeholder="City" value="Mike">
+                                                <label>Birthday</label>
+                                                <input type="datetime" name="birthday" class="form-control" placeholder="Birthday" value="{{ user.birthday|date('Y-m-d') }}" required>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label>Country</label>
-                                                <input type="text" class="form-control" placeholder="Country" value="Andrew">
+                                                <label>Role</label>
+                                                <input type="text" class="form-control" name="role" placeholder="Role" value="{{ user.role }}" required>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label>Postal Code</label>
-                                                <input type="number" class="form-control" placeholder="ZIP Code">
+                                                <label>Salary</label>
+                                                <input type="text" class="form-control" name="salary" placeholder="Salary" value="{{ user.salary }}" style="pointer-events:none;background:#F5F5F5;cursor:  not-allowed">
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-12">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>About Me</label>
-                                                <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                                <label>New Password</label>
+                                                <input type="password" name="password" class="form-control" placeholder="**********" >
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Confirm Password</label>
+                                                <input type="password" name="new_password" class="form-control" placeholder="*********" >
                                             </div>
                                         </div>
                                     </div>
 
-                                    <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                    <button type="submit" class="btn btn-outline-danger pull-right">Update Profile</button>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>
@@ -127,4 +133,9 @@
                 </div>
             </div>
         </div>
+{% endblock %}
+
+{% block javascripts %}
+
+
 {% endblock %}
