@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+input:focus {
+    border-color: #111;
+    border-width: 1.5px;
+}
+
+.headerInputs {
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Raleway';
+    background: linear-gradient(lightgrey, lightgrey), linear-gradient(lightgrey, lightgrey), linear-gradient(lightgrey, lightgrey);
+    background-size: 1px 10%, 100% 1px, 1px 10%;
+    background-position: bottom left, bottom center, bottom right;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0.2 1 auto;
+    align-self: stretch;
+}
+
+.flex-item:nth-child(2) {
+    order: 0;
+    flex: 0.8 1 auto;
+    align-self: stretch;
+    position: fixed;
+    bottom: 0;
+}
+
+#mainContainer {
+    display: block;
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: flex-start;*/
+    margin: 10px;
+}
+
+.sectionDiv {
+    transition: width 1s;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    background-color: white;
+    position: relative;
+    margin-top: 25px;
+}
+
+#toolbarContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.form-control{
+    font-family: 'Raleway';
+}
