@@ -87,22 +87,39 @@ class DefaultController extends Controller
         $job->setForm($request->request->get('json-form'));
         $job->setLat($request->request->get('latitude'));
         $job->setLng($request->request->get('longitude'));
-        $job->setDeadline($request->request->get('job-deadline'));
+
+//        var_dump($request);
+
+
+        $deadline = date_create($request->request->get('job-deadline'));
+
+
+
+
+//        $deadline = date_format($date, 'Y-m-d');
+
+//        $time = strtotime($request->request->get('job-deadline'));
+//        $deadline = date('Y-m-d', $time);
+
+        $job->setDeadline($deadline);
         $job->setPriority($request->request->get('job-priority'));
         $job->setReward($request->request->get('job-reward'));
         $job->setJobDiff($request->request->get('job-difficulty'));
         $job->setUser($this->getUser());
-        $job->setCreatedAt(date("Y/m/d"));
-        $job->setUpdatedAt(date("Y/m/d"));
+
+        $date = new \DateTime();
+
+        $job->setCreatedAt($date);
+        $job->setUpdatedAt($date);
 
 //        Get user name/surname from form and query for the user from the db
 //        $user = new User();
 
         $em = $this->getDoctrine()->getManager();
-//        $em->persist($job);
-//        $em->flush();
+        $em->persist($job);
+        $em->flush();
 
-        return new Response("true");
+        return new Response('U kry');
 
     }
 

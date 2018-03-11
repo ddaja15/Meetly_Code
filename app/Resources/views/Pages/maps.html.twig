@@ -167,7 +167,7 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label>Deadline</label>
-                                                    <input id="job-deadline" type="datetime-local" placeholder="Deadline" class="form-control">
+                                                    <input id="job-deadline" type="date" placeholder="Deadline" class="form-control">
                                                 </div>
                                             </div>
 
@@ -175,9 +175,9 @@
                                                 <div class="form-group">
                                                     <label>Job Priority</label>
                                                     <select class="form-control" id="job-priority">
-                                                        <option>High</option>
-                                                        <option>Medium</option>
-                                                        <option>Low</option>
+                                                        <option value="2">High</option>
+                                                        <option value="1">Medium</option>
+                                                        <option value="0">Low</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -195,10 +195,10 @@
                                                 <div class="form-group">
                                                     <label>Job Difficulty</label>
                                                     <select class="form-control" id="job-difficulty">
-                                                        <option>Easy</option>
-                                                        <option>Challenging</option>
-                                                        <option>Hard</option>
-                                                        <option>Extreme</option>
+                                                        <option value="0">Easy</option>
+                                                        <option value="1">Challenging</option>
+                                                        <option value="2">Hard</option>
+                                                        <option value="3">Extreme</option>
                                                     </select>
                                                 </div>
                                             </div>

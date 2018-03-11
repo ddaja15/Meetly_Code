@@ -63,7 +63,7 @@ class Job
 
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="date")
      */
     private $deadline;
 
