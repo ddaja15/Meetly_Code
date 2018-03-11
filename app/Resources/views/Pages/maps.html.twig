@@ -4,10 +4,7 @@
 {% block stylesheets %}
     {{ parent() }}
 
-
     <link href="{{ asset('assets/css/dynamicForm.css') }}" rel="stylesheet"/>
-
-
 
 {% endblock %}
 
@@ -414,6 +411,29 @@
 
 
         <script src="{{ asset('assets/js/map/map.js') }}"></script>
+
+         {% for job in jobs %}
+            <script>
+
+                    var myMarker = new google.maps.LatLng({{ job.lat }},{{ job.lng  }});
+
+                    var marker = new google.maps.Marker({
+                     position: myMarker,
+                     title: "Hello Tirana!"
+                     });
+
+                    marker.addListener('click', function() {
+                        map.setZoom(8);
+                        map.setCenter(marker.getPosition());
+                        alert("Clicked on {{ job.title }}");
+                    });
+
+                     // To add the marker to the map, call setMap();
+                     marker.setMap(map);
+
+            </script>
+
+         {% endfor %}
 
 
         <script>
