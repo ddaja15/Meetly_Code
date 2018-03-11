@@ -2,12 +2,14 @@ var currentNumberOfSections, totalNumberOfSections, numberOfQuestions;
 
 var lastLat, lastLng;
 
+var map;
+
 $(document).ready(function () {
 
 
     var myLatlng = new google.maps.LatLng(41.3275, 19.8187);
 
-    var map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.getElementById('map'), {
         zoom: 13,
         center: myLatlng,
         scrollwheel: true, //we disable de scroll over the map, it is a really annoing when you scroll through page
@@ -55,21 +57,13 @@ $(document).ready(function () {
 
     });
 
-    var marker = new google.maps.Marker({
-        position: myLatlng,
-        title: "Hello Tirana!"
-    });
 
-    // To add the marker to the map, call setMap();
-    marker.setMap(map);
 
     var geocoder = new google.maps.Geocoder();
 
     // Geocoding
     $('.search-btn').click(function () {
-
         geocodeAddress(geocoder, map);
-
     });
 
     $('.search-btn-modal').click(function () {
@@ -105,7 +99,6 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             url: '/add/job',
-            dataType: 'json',
             data: {
                 'job-title': jobTitle,
                 'job-employee': jobEmployee,
@@ -119,9 +112,11 @@ $(document).ready(function () {
                 'longitude': lastLng
             },
             success: function (msg) {
-                alert(msg);
+                location.reload();
             }
         });
+
+
     });
 
     // $('li > a').click(function() {
@@ -366,3 +361,12 @@ function geocodeAddressModal(geocoder, resultsMap) {
         }
     });
 }
+
+
+function getMap(){
+    return this.map;
+}
+
+
+// Test
+

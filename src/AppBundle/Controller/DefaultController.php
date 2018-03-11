@@ -35,9 +35,14 @@ class DefaultController extends Controller
         $stmt->execute();
         $users = $stmt->fetchAll();
 
+        $sql2 = "SELECT * FROM job WHERE answer IS NULL";
+        $stmt2 = $em->getConnection()->prepare($sql2);
+        $stmt2->execute();
+        $jobs = $stmt2->fetchAll();
         // replace this example code with whatever you need
         return $this->render('Pages/maps.html.twig', [
-            'users'=>$users,
+            'users' => $users,
+            'jobs' => $jobs,
         ]);
     }
 
@@ -88,24 +93,26 @@ class DefaultController extends Controller
         $job->setLat($request->request->get('latitude'));
         $job->setLng($request->request->get('longitude'));
 
-//        var_dump($request);
-
-
         $deadline = date_create($request->request->get('job-deadline'));
-
-
-
-
-//        $deadline = date_format($date, 'Y-m-d');
-
-//        $time = strtotime($request->request->get('job-deadline'));
-//        $deadline = date('Y-m-d', $time);
 
         $job->setDeadline($deadline);
         $job->setPriority($request->request->get('job-priority'));
         $job->setReward($request->request->get('job-reward'));
         $job->setJobDiff($request->request->get('job-difficulty'));
-        $job->setUser($this->getUser());
+
+        $employee = $request->request->get('job-employee');
+        $data = explode(" ",$employee);
+        $emp_name = $data[0];
+        $emp_surname = $data[1];
+
+        $user = $this->getDoctrine()->getRepository('AppBundle:User')->findOneBy([
+            'name'=>$emp_name,
+            'surname'=>$emp_surname
+        ]);
+
+        $job->setUser($user);
+
+        $job->setUser($user);
 
         $date = new \DateTime();
 
@@ -120,10 +127,36 @@ class DefaultController extends Controller
         $em->flush();
 
         return new Response('U kry');
-
     }
 
 
+    /**
+     * @Route("/delete/job",name="deleteJob")
+     */
+    public function deleteJobAction(Request $request){
 
+        $delete_id = $request->request->get('id');
+        $em = $this->getDoctrine()->getManager();
+        $sql="DELETE FROM job WHERE id = $delete_id";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+
+        return new Response('U eleminu');
+    }
+
+    /**
+     * @Route("/get/employee",name="getEmployee")
+     */
+    public function getEmployeeAction(Request $request){
+
+        $emp_id = $request->request->get('id');
+        $em = $this->getDoctrine()->getManager();
+        $sql="select * from user where id = $emp_id";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $user = $stmt->fetchAll();
+
+        return new Response($user[0]['name']." ".$user[0]['surname']);
+    }
 
 }

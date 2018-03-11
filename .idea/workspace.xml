@@ -2,11 +2,272 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1755258e-8d16-43e7-9c23-41b14e129e34" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Meetly.iml" afterPath="$PROJECT_DIR$/.idea/Meetly.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/blue_MarkerZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/brown_MarkerZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/darkgreen_MarkerZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/green_MarkerZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/markers.psd" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/orange_MarkerZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/paleblue_MarkerZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/pink_MarkerZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/purple_MarkerZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/red_MarkerZ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerA.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerB.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerC.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerD.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerE.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerF.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerG.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerH.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerI.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerJ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerK.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerL.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerM.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerO.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerP.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerQ.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerR.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerS.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerT.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerU.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerV.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerW.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerX.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerY.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/marker_icons/yellow_MarkerZ.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Job.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Job.php" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/map/map.js" afterPath="$PROJECT_DIR$/web/assets/js/map/map.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,18 +314,34 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="109" column="27" lean-forward="false" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
+            <state relative-caret-position="943">
+              <caret line="112" column="29" lean-forward="true" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
               <folding>
                 <element signature="e#40#65#0#PHP" expanded="true" />
                 <element signature="e#606#633#0#PHP" expanded="true" />
-                <element signature="e#1112#1134#0#PHP" expanded="true" />
-                <element signature="e#1382#1404#0#PHP" expanded="true" />
-                <element signature="e#1728#1744#1#PHP" expanded="true" />
-                <element signature="e#1787#1813#0#PHP" expanded="true" />
-                <element signature="e#2072#2097#1#PHP" expanded="true" />
-                <marker date="1520779283450" expanded="true" signature="867:904" ph="select * fro... user" />
+                <element signature="e#1288#1310#0#PHP" expanded="true" />
+                <element signature="e#1589#1611#0#PHP" expanded="true" />
+                <element signature="e#1935#1951#1#PHP" expanded="true" />
+                <element signature="e#1994#2020#0#PHP" expanded="true" />
+                <element signature="e#2279#2304#1#PHP" expanded="true" />
+                <element signature="e#3282#3298#1#PHP" expanded="true" />
+                <marker date="1520789570803" expanded="true" signature="867:904" ph="select * fro... user" />
+                <marker date="1520789570803" expanded="true" signature="1040:1078" ph="SELECT * FRO... jobs" />
+                <marker date="1520789570803" expanded="true" signature="4048:4075" ph="DELETE FROM job... " />
+                <marker date="1520789570803" expanded="true" signature="4048:4076" ph="DELETE FROM job... " />
+                <marker date="1520789570803" expanded="true" signature="4453:4483" ph="select * fro... user" />
+                <marker date="1520789570803" expanded="true" signature="4453:4484" ph="select * fro... user" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maps.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="759">
+              <caret line="514" column="0" lean-forward="false" selection-start-line="514" selection-start-column="0" selection-end-line="514" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,8 +349,8 @@
       <file leaf-file-name="Job.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Job.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2825">
-              <caret line="95" column="28" lean-forward="false" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
+            <state relative-caret-position="1806">
+              <caret line="133" column="5" lean-forward="false" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -82,8 +359,8 @@
       <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="112" />
+            <state relative-caret-position="136">
+              <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,18 +381,8 @@
       <file leaf-file-name="user.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
+            <state relative-caret-position="17">
               <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="maps.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="169" column="87" lean-forward="false" selection-start-line="169" selection-start-column="87" selection-end-line="169" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -124,22 +391,22 @@
       <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/map/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="114" column="31" lean-forward="false" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="31" />
+            <state relative-caret-position="23">
+              <caret line="96" column="42" lean-forward="false" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
               <folding>
-                <marker date="1520776727146" expanded="true" signature="5349:5424" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="5541:5637" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="5864:5939" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="6969:7044" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="7161:7257" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="7484:7559" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="8118:8193" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="8310:8406" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="8633:8708" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="9844:9861" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="9948:9977" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="10045:10104" ph="..." />
-                <marker date="1520776727146" expanded="true" signature="10349:10441" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="5147:5222" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="5339:5435" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="5662:5737" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="6767:6842" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="6959:7055" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="7282:7357" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="7916:7991" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="8108:8204" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="8431:8506" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="9642:9659" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="9746:9775" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="9843:9902" ph="..." />
+                <marker date="1520788828611" expanded="true" signature="10147:10239" ph="..." />
               </folding>
             </state>
           </provider>
@@ -189,6 +456,7 @@
       <find>add section</find>
       <find>notify</find>
       <find>finalize</find>
+      <find>getjob</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -219,16 +487,16 @@
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/web/assets/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/Login/login.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/web/assets/css/light-bootstrap-dashboard.css" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/LoginController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Test/test.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/SettingsController.php" />
         <option value="$PROJECT_DIR$/web/assets/css/dynamicForm.css" />
-        <option value="$PROJECT_DIR$/web/assets/js/map/map.js" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Job.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig" />
+        <option value="$PROJECT_DIR$/web/assets/js/map/map.js" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       </list>
     </option>
@@ -382,13 +650,14 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\app\Resources\views" />
-      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\src\AppBundle\Controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\app\Resources\views\Pages" />
       <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\meetly\web\assets\marker_icons" />
+      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\app\Resources\views" />
+      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\src\AppBundle\Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -490,47 +759,59 @@
       <workItem from="1520687448646" duration="531000" />
       <workItem from="1520767930407" duration="4668000" />
     </task>
+    <task id="LOCAL-00001" summary="You can now create jobs. No validation still">
+      <created>1520779432267</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1520779432267</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53138000" />
+    <option name="totallyTimeSpent" value="63442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18910742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18683812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26480263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26480263" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29339477" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29339477" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24432677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18683812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="You can now create jobs. No validation still" />
+    <option name="LAST_COMMIT_MESSAGE" value="You can now create jobs. No validation still" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -580,12 +861,18 @@
           <folding>
             <element signature="e#40#65#0#PHP" expanded="true" />
             <element signature="e#606#633#0#PHP" expanded="true" />
-            <element signature="e#1112#1134#0#PHP" expanded="true" />
-            <element signature="e#1382#1404#0#PHP" expanded="true" />
-            <element signature="e#1728#1744#1#PHP" expanded="true" />
-            <element signature="e#1787#1813#0#PHP" expanded="true" />
-            <element signature="e#2072#2097#1#PHP" expanded="true" />
-            <marker date="1520779283450" expanded="true" signature="867:904" ph="select * fro... user" />
+            <element signature="e#1288#1310#0#PHP" expanded="true" />
+            <element signature="e#1589#1611#0#PHP" expanded="true" />
+            <element signature="e#1935#1951#1#PHP" expanded="true" />
+            <element signature="e#1994#2020#0#PHP" expanded="true" />
+            <element signature="e#2279#2304#1#PHP" expanded="true" />
+            <element signature="e#3282#3298#1#PHP" expanded="true" />
+            <marker date="1520789570803" expanded="true" signature="867:904" ph="select * fro... user" />
+            <marker date="1520789570803" expanded="true" signature="1040:1078" ph="SELECT * FRO... jobs" />
+            <marker date="1520789570803" expanded="true" signature="4048:4075" ph="DELETE FROM job... " />
+            <marker date="1520789570803" expanded="true" signature="4048:4076" ph="DELETE FROM job... " />
+            <marker date="1520789570803" expanded="true" signature="4453:4483" ph="select * fro... user" />
+            <marker date="1520789570803" expanded="true" signature="4453:4484" ph="select * fro... user" />
           </folding>
         </state>
       </provider>
@@ -700,6 +987,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -745,6 +1033,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -828,25 +1117,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/css/dynamicForm.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date_c.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+        <state relative-caret-position="480">
+          <caret line="319" column="20" lean-forward="false" selection-start-line="319" selection-start-column="20" selection-end-line="319" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -861,65 +1143,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/map/map.js">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="114" column="31" lean-forward="false" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="31" />
-          <folding>
-            <marker date="1520776727146" expanded="true" signature="5349:5424" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="5541:5637" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="5864:5939" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="6969:7044" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="7161:7257" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="7484:7559" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="8118:8193" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="8310:8406" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="8633:8708" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="9844:9861" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="9948:9977" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="10045:10104" ph="..." />
-            <marker date="1520776727146" expanded="true" signature="10349:10441" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="169" column="87" lean-forward="false" selection-start-line="169" selection-start-column="87" selection-end-line="169" selection-end-column="87" />
+        <state relative-caret-position="136">
+          <caret line="233" column="0" lean-forward="false" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Job.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2825">
-          <caret line="95" column="28" lean-forward="false" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
+        <state relative-caret-position="1806">
+          <caret line="133" column="5" lean-forward="false" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date_c.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="319" column="20" lean-forward="false" selection-start-line="319" selection-start-column="20" selection-end-line="319" selection-end-column="20" />
+        <state relative-caret-position="17">
+          <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="514" column="0" lean-forward="false" selection-start-line="514" selection-start-column="0" selection-end-line="514" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/map/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="96" column="42" lean-forward="false" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
+          <folding>
+            <marker date="1520788828611" expanded="true" signature="5147:5222" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="5339:5435" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="5662:5737" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="6767:6842" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="6959:7055" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="7282:7357" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="7916:7991" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="8108:8204" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="8431:8506" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="9642:9659" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="9746:9775" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="9843:9902" ph="..." />
+            <marker date="1520788828611" expanded="true" signature="10147:10239" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="109" column="27" lean-forward="false" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
+        <state relative-caret-position="943">
+          <caret line="112" column="29" lean-forward="true" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
           <folding>
             <element signature="e#40#65#0#PHP" expanded="true" />
             <element signature="e#606#633#0#PHP" expanded="true" />
-            <element signature="e#1112#1134#0#PHP" expanded="true" />
-            <element signature="e#1382#1404#0#PHP" expanded="true" />
-            <element signature="e#1728#1744#1#PHP" expanded="true" />
-            <element signature="e#1787#1813#0#PHP" expanded="true" />
-            <element signature="e#2072#2097#1#PHP" expanded="true" />
-            <marker date="1520779283450" expanded="true" signature="867:904" ph="select * fro... user" />
+            <element signature="e#1288#1310#0#PHP" expanded="true" />
+            <element signature="e#1589#1611#0#PHP" expanded="true" />
+            <element signature="e#1935#1951#1#PHP" expanded="true" />
+            <element signature="e#1994#2020#0#PHP" expanded="true" />
+            <element signature="e#2279#2304#1#PHP" expanded="true" />
+            <element signature="e#3282#3298#1#PHP" expanded="true" />
+            <marker date="1520789570803" expanded="true" signature="867:904" ph="select * fro... user" />
+            <marker date="1520789570803" expanded="true" signature="1040:1078" ph="SELECT * FRO... jobs" />
+            <marker date="1520789570803" expanded="true" signature="4048:4075" ph="DELETE FROM job... " />
+            <marker date="1520789570803" expanded="true" signature="4048:4076" ph="DELETE FROM job... " />
+            <marker date="1520789570803" expanded="true" signature="4453:4483" ph="select * fro... user" />
+            <marker date="1520789570803" expanded="true" signature="4453:4484" ph="select * fro... user" />
           </folding>
         </state>
       </provider>
