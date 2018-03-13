@@ -88,13 +88,13 @@ class User implements UserInterface
 
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="date")
      */
     private $created_at;
 
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="date")
      */
     private $updated_at;
 
