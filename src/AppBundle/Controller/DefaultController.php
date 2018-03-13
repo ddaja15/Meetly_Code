@@ -17,11 +17,61 @@ class DefaultController extends Controller
      */
     public function dashboardAction(Request $request)
     {
+
+        $em = $this->getDoctrine()->getManager();
+
+        // Employee Nr
+        $sql = "SELECT COUNT(id) as employee_nr FROM user WHERE is_admin='0'";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $employee_nr = $stmt->fetchAll();
+
+        // Open Jobs
+        $sql = "SELECT COUNT(id) as open_jobs FROM job WHERE answer IS NULL";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $open_jobs = $stmt->fetchAll();
+
+        // Due Soon
+        $sql = "SELECT COUNT(id) as due_soon FROM job WHERE deadline BETWEEN CURRENT_DATE() AND (CURRENT_DATE() + INTERVAL 7 DAY)";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $due_soon = $stmt->fetchAll();
+
+        // Closed Recently
+        $sql = "SELECT COUNT(id) as recently FROM job WHERE answer IS NOT NULL AND finished_at BETWEEN (CURRENT_DATE() - INTERVAL 7 DAY) AND CURRENT_DATE()";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $recently = $stmt->fetchAll();
+
+
+
+
+
+
         // replace this example code with whatever you need
         return $this->render('Pages/dashboard.html.twig', [
-            'user' => $this->getUser()
+            'user' => $this->getUser(),
+            'stats' => [
+                'employee_nr' => $employee_nr[0]['employee_nr'],
+                'open_jobs' => $open_jobs[0]['open_jobs'],
+                'due_soon' => $due_soon[0]['due_soon'],
+                'recently' => $recently[0]['recently']
+            ]
         ]);
     }
+
+    /**
+     * @Route("/paper", name="Paper")
+     */
+    public function paperAction(Request $request)
+    {
+
+        return $this->render('Pages/now-ui.html.twig', [
+
+        ]);
+    }
+
 
     /**
      * @Route("/maps", name="maps")
