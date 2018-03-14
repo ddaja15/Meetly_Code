@@ -1,5 +1,5 @@
 AppBundle\Entity\User:
-  user_{1..10}:
+  user_{1..30}:
     username: '<username()>'
     password: '<password()>'
     name: '<firstName()>'
@@ -14,4 +14,21 @@ AppBundle\Entity\User:
     updated_at: '<date_create()>'
     last_loggin: '<dateTimeBetween("-50 years","-18 years")>'
     fuel_consumption: '<numberBetween(0,10)>'
+
+
+AppBundle\Entity\Job:
+  job_{1..100}:
+    user: '@user_<numberBetween(1,30)>'
+    title: '<catchPhrase()>'
+    description: '<sentence()>'
+    form: '{}'
+    lat: '<latitude(39, 42)>'
+    lng: '<longitude(19,21)>'
+    deadline: '<dateTimeBetween("now","+20 days")>'
+    priority: '<numberBetween(0,2)>'
+    reward: '<numberBetween(0, 200)>'
+    job_diff: '<numberBetween(0,3)>'
+    created_at: '<dateTimeBetween("-20 days","now")>'
+    updated_at: '<dateTimeBetween("-20 days","now")>'
+    is_answered: '0'
 
