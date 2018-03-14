@@ -27,7 +27,7 @@ class DefaultController extends Controller
         $employee_nr = $stmt->fetchAll();
 
         // Open Jobs
-        $sql = "SELECT COUNT(id) as open_jobs FROM job WHERE answer IS NULL";
+        $sql = "SELECT COUNT(id) as open_jobs FROM job WHERE is_answered = '0'";
         $stmt = $em->getConnection()->prepare($sql);
         $stmt->execute();
         $open_jobs = $stmt->fetchAll();
@@ -39,13 +39,49 @@ class DefaultController extends Controller
         $due_soon = $stmt->fetchAll();
 
         // Closed Recently
-        $sql = "SELECT COUNT(id) as recently FROM job WHERE answer IS NOT NULL AND finished_at BETWEEN (CURRENT_DATE() - INTERVAL 7 DAY) AND CURRENT_DATE()";
+        $sql = "SELECT COUNT(id) as recently FROM answer WHERE answered_at BETWEEN (CURRENT_DATE() - INTERVAL 7 DAY) AND CURRENT_DATE()";
         $stmt = $em->getConnection()->prepare($sql);
         $stmt->execute();
         $recently = $stmt->fetchAll();
 
+        // Last Week's opened and closed jobs
+        $last_week_opened_jobs = array();
+        $last_week_closed_jobs = array();
+
+        for($i = 6; $i >= 0; $i--){
+
+            $sql = "SELECT COUNT(id) as opened_jobs FROM job WHERE created_at = (CURRENT_DATE() - INTERVAL $i DAY)";
+            $stmt = $em->getConnection()->prepare($sql);
+            $stmt->execute();
+            $opened_jobs = $stmt->fetchAll();
+            array_push($last_week_opened_jobs, $opened_jobs[0]['opened_jobs']);
 
 
+            $sql = "SELECT COUNT(id) as closed_jobs FROM answer WHERE answered_at = (CURRENT_DATE() - INTERVAL $i DAY)";
+            $stmt = $em->getConnection()->prepare($sql);
+            $stmt->execute();
+            $closed_jobs = $stmt->fetchAll();
+            array_push($last_week_closed_jobs, $closed_jobs[0]['closed_jobs']);
+        }
+
+
+        // Finished before deadline
+        $sql = "SELECT COUNT(job.id) as finishedBeforeDeadline FROM job,answer WHERE job.id=answer.job_id and answer.response is not null and job.deadline>=answer.answered_at";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $finishedBeforeDeadline = $stmt->fetchAll();
+
+        // Finished after deadline
+        $sql = "SELECT COUNT(job.id) as finishedAfterDeadline FROM job,answer WHERE job.id=answer.job_id and answer.response is not null and job.deadline<=answer.answered_at";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $finishedAfterDeadline = $stmt->fetchAll();
+
+        // Not finished at all
+        $sql = "SELECT COUNT(id) as notFinished FROM job WHERE job.is_answered = 0";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $notFinished = $stmt->fetchAll();
 
 
 
@@ -56,7 +92,12 @@ class DefaultController extends Controller
                 'employee_nr' => $employee_nr[0]['employee_nr'],
                 'open_jobs' => $open_jobs[0]['open_jobs'],
                 'due_soon' => $due_soon[0]['due_soon'],
-                'recently' => $recently[0]['recently']
+                'recently' => $recently[0]['recently'],
+                'last_week_opened_jobs' => $last_week_opened_jobs,
+                'last_week_closed_jobs' => $last_week_closed_jobs,
+                'finishedBeforeDeadline'=>$finishedBeforeDeadline[0]['finishedBeforeDeadline'],
+                'finishedAfterDeadline'=>$finishedAfterDeadline[0]['finishedAfterDeadline'],
+                'notFinished'=>$notFinished[0]['notFinished'],
             ]
         ]);
     }
@@ -85,7 +126,7 @@ class DefaultController extends Controller
         $stmt->execute();
         $users = $stmt->fetchAll();
 
-        $sql2 = "SELECT * FROM job WHERE answer IS NULL";
+        $sql2 = "SELECT * FROM job WHERE is_answered = 0";
         $stmt2 = $em->getConnection()->prepare($sql2);
         $stmt2->execute();
         $jobs = $stmt2->fetchAll();
@@ -149,6 +190,7 @@ class DefaultController extends Controller
         $job->setPriority($request->request->get('job-priority'));
         $job->setReward($request->request->get('job-reward'));
         $job->setJobDiff($request->request->get('job-difficulty'));
+        $job->setIsAnswered(0);
 
         $employee = $request->request->get('job-employee');
         $data = explode(" ",$employee);

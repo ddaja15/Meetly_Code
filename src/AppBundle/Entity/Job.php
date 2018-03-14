@@ -8,7 +8,6 @@
 
 namespace AppBundle\Entity;
 
-
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -87,27 +86,22 @@ class Job
 
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="date")
      */
     private $created_at;
 
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="date")
      */
     private $updated_at;
 
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="boolean")
      */
-    private $answer;
+    private $is_answered;
 
-
-    /**
-     * @ORM\Column(type="datetime")
-     */
-    private $finished_at;
 
     /**
      * @return mixed
@@ -320,34 +314,19 @@ class Job
     /**
      * @return mixed
      */
-    public function getAnswer()
+    public function getIsAnswered()
     {
-        return $this->answer;
+        return $this->is_answered;
     }
 
     /**
-     * @param mixed $answer
+     * @param mixed $is_answered
      */
-    public function setAnswer($answer)
+    public function setIsAnswered($is_answered)
     {
-        $this->answer = $answer;
+        $this->is_answered = $is_answered;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getFinishedAt()
-    {
-        return $this->finished_at;
-    }
-
-    /**
-     * @param mixed $finished_at
-     */
-    public function setFinishedAt($finished_at)
-    {
-        $this->finished_at = $finished_at;
-    }
 
 
 }
