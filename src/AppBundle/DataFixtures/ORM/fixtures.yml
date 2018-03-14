@@ -4,7 +4,7 @@ AppBundle\Entity\User:
     password: '<password()>'
     name: '<firstName()>'
     surname: '<lastName()>'
-    birthday: "<dateTimeBetween('-30 years','now')>"
+    birthday: '<dateTimeBetween("-50 years","-18 years")>'
     email: '<email()>'
     phone_nr: '<phoneNumber()>'
     is_admin: '<numberBetween(0,1)>'
@@ -14,7 +14,6 @@ AppBundle\Entity\User:
     updated_at: '<date_create()>'
     last_loggin: '<dateTimeBetween("-50 years","-18 years")>'
     fuel_consumption: '<numberBetween(0,10)>'
-
 
 
 AppBundle\Entity\Job:
@@ -32,3 +31,4 @@ AppBundle\Entity\Job:
     created_at: '<dateTimeBetween("-20 days","now")>'
     updated_at: '<dateTimeBetween("-20 days","now")>'
     is_answered: '0'
+
