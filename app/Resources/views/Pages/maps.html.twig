@@ -398,12 +398,16 @@
         {{ parent() }}
 
 
+
         <script src="{{ asset('assets/js/map/map.js') }}"></script>
 
 
         <script>
 
             $(document).ready(function () {
+
+                $('.active').removeClass('active');
+                $("#map-active").parent().parent().addClass('active');
 
                 var allMarkers = [];
                 var lastClicked;
@@ -498,7 +502,7 @@
 
                 });
 
-                console.log(allMarkers);
+                // console.log(allMarkers);
 
                 var markerCluster = new MarkerClusterer(map, allMarkers, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 

@@ -57,38 +57,38 @@
                     </div>
 
                     <ul class="nav">
-                        <li class="active">
+                        <li>
                             <a href="{{ path('dashboard') }}">
                                 <i class="ti-panel"></i>
-                                <p>Dashboard</p>
+                                <p id="dashboard-active">Dashboard</p>
                             </a>
                         </li>
 
                         <li>
                             <a href="{{ path('maps') }}">
                                 <i class="ti-map"></i>
-                                <p>Map</p>
+                                <p id="map-active">Map</p>
                             </a>
                         </li>
 
                         <li>
                             <a href="{{ path('employee') }}">
                                 <i class="ti-user"></i>
-                                <p>Employees</p>
+                                <p id="employee-active">Employees</p>
                             </a>
                         </li>
 
                         <li>
                             <a href="{{ path('reports') }}">
                                 <i class="ti-view-list-alt"></i>
-                                <p>Reports</p>
+                                <p id="reports-active">Reports</p>
                             </a>
                         </li>
 
                         <li>
                             <a href="{{ path('user') }}">
-                                <i class="ti-pencil-alt2"></i>
-                                <p>Settings</p>
+                                <i class="ti-settings"></i>
+                                <p  id="settings-active">Settings</p>
                             </a>
                         </li>
 
@@ -216,17 +216,16 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+
     <script type="text/javascript">
         $(document).ready(function () {
 
-            // demo.initChartist();
+            // $('.sidebar-wrapper').on('click', 'li', function () {
 
-            $('.sidebar-wrapper').on('click', 'li', function () {
-                $(".active").removeClass('active');
-                $(this).addClass('active');
-                console.log($(".active"));
-                console.log($(this));
-            });
+            // });
+
+
+            // demo.initChartist();
 
             {% if user.name is defined %}
             $.notify({

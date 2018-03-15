@@ -54,3 +54,20 @@
 {% endblock %}
 
 
+{% block javascripts %}
+
+    {{ parent() }}
+
+
+    <script>
+        $(document).ready(function () {
+
+            $('.active').removeClass('active');
+            $("#employee-active").parent().parent().addClass('active');
+
+        });
+    </script>
+
+{% endblock %}
+
+

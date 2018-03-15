@@ -138,6 +138,38 @@
                 </div>
             </div>
 
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card ">
+
+                        <div class="header">
+                            <h4 class="title">Test</h4>
+                            <p class="category">Test chart</p>
+                        </div>
+
+                        <div class="content">
+
+                            <div id="test-anim-chart" class="ct-chart"></div>
+                            <div class="footer">
+                                <div class="chart-legend">
+                                    <i class="fa fa-circle text-info"></i> Opened Jobs
+                                    <i class="fa fa-circle text-warning"></i> Closed Jobs
+                                </div>
+                                <hr>
+                                <div class="stats">
+                                    <i class="ti-check"></i> Data information certified
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
@@ -194,13 +226,65 @@
 
     {{ parent() }}
 
+
+
     <script>
 
+
+
         $(document).ready(function () {
+
+
+            $('.active').removeClass('active');
+            $("#dashboard-active").parent().parent().addClass('active');
+
 
             myChart();
 
             function myChart(){
+
+
+                var data = {
+                    labels: ['1', '2', '3', '4', '5', '6'],
+                    series: [
+                        {
+                            data: [1, 2, 3, 5, 8, 13]
+                        }
+                    ]
+                };
+
+                /* Set some base options (settings will override the default settings in Chartist.js *see default settings*). We are adding a basic label interpolation function for the xAxis labels. */
+                var options = {
+                    axisX: {
+                        labelInterpolationFnc: function(value) {
+                            return 'Calendar Week ' + value;
+                        }
+                    }
+                };
+
+                /* Now we can specify multiple responsive settings that will override the base settings based on order and if the media queries match. In this example we are changing the visibility of dots and lines as well as use different label interpolations for space reasons. */
+                var responsiveOptions = [
+                    ['screen and (min-width: 641px) and (max-width: 1024px)', {
+                        showPoint: false,
+                        axisX: {
+                            labelInterpolationFnc: function(value) {
+                                return 'Week ' + value;
+                            }
+                        }
+                    }],
+                    ['screen and (max-width: 640px)', {
+                        showLine: false,
+                        axisX: {
+                            labelInterpolationFnc: function(value) {
+                                return 'W' + value;
+                            }
+                        }
+                    }]
+                ];
+
+                /* Initialize the chart with the above settings */
+                new Chartist.Line('#test-anim-chart', data, options, responsiveOptions);
+
 
                 var dataSales = {
                     labels: ['9:00AM', '12:00AM', '3:00PM', '6:00PM', '9:00PM', '12:00PM', '3:00AM', '6:00AM'],
