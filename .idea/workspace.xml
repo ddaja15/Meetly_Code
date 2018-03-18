@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1755258e-8d16-43e7-9c23-41b14e129e34" name="Default" comment="Dashboard fixes. Data added to database. Navbar changes and map styling." />
+    <list default="true" id="1755258e-8d16-43e7-9c23-41b14e129e34" name="Default" comment="Dashboard fixes. Data added to database. Navbar changes and map styling.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1027">
-              <caret line="575" column="14" lean-forward="true" selection-start-line="575" selection-start-column="14" selection-end-line="575" selection-end-column="14" />
+              <caret line="575" column="14" lean-forward="false" selection-start-line="575" selection-start-column="14" selection-end-line="575" selection-end-column="14" />
               <folding>
                 <element signature="e#9058#9098#0#HTML" expanded="true" />
               </folding>
@@ -142,7 +145,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/web/paper-assets/css/paper-dashboard.css" />
         <option value="$PROJECT_DIR$/web/assets/js/map/map.js" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Pages/reports.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
@@ -154,6 +156,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6d2645e9-685e-4898-a236-48dda3c2d694/console_1.sql" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig" />
       </list>
     </option>
   </component>
@@ -461,11 +464,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101000000" />
+    <option name="totallyTimeSpent" value="101389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26701966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -474,7 +476,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40552995" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40552995" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -731,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
@@ -826,10 +820,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1027">
-          <caret line="575" column="14" lean-forward="true" selection-start-line="575" selection-start-column="14" selection-end-line="575" selection-end-column="14" />
+          <caret line="575" column="14" lean-forward="false" selection-start-line="575" selection-start-column="14" selection-end-line="575" selection-end-column="14" />
           <folding>
             <element signature="e#9058#9098#0#HTML" expanded="true" />
           </folding>
