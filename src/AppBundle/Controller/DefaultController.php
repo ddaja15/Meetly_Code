@@ -85,6 +85,55 @@ class DefaultController extends Controller
 
 
 
+        // Second Chart Query
+
+        $sql = "SELECT count(job.id) as closed_jobs, job.user_id as robi, user.name, user.surname, answered_at, (SELECT count(job.id)
+                                                                                                                 FROM job
+                                                                                                                 WHERE job.user_id = robi
+                                        
+                                                                                                                 ) as assigned_jobs
+                FROM job, user, answer
+                WHERE job.user_id = user.id
+                AND answer.job_id = job.id
+                AND job.is_answered = 1
+                AND answer.answered_at BETWEEN (CURRENT_DATE() - INTERVAL 7 DAY) AND CURRENT_DATE()
+                GROUP BY user_id
+                ORDER BY count(job.id)
+                DESC LIMIT 5;";
+
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $top_employees = $stmt->fetchAll();
+
+
+
+        // Fourth chart data, Roles and role_count
+
+
+        $sql = "SELECT count(user.id) as role_count, role
+                FROM user
+                GROUP BY role
+                ORDER BY count(user.id)
+                DESC LIMIT 7";
+
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $top_roles = $stmt->fetchAll();
+
+        $colors = array('#68B3C8','#F3BB45','#EB5E28','#7AC29A','#7A9E9F','rgba(104, 179, 200, 0.8)','rgba(122, 194, 154, 0.8)');
+
+        $top_roles_colors = array();
+
+        $cnt = 0;
+        foreach ($top_roles as $role){
+            $role['color'] = $colors[$cnt++];
+            array_push($top_roles_colors, $role);
+        }
+
+//        array_push($top_roles, $colors);
+
+        // Color array
+
         // replace this example code with whatever you need
         return $this->render('Pages/dashboard.html.twig', [
             'user' => $this->getUser(),
@@ -98,6 +147,9 @@ class DefaultController extends Controller
                 'finishedBeforeDeadline'=>$finishedBeforeDeadline[0]['finishedBeforeDeadline'],
                 'finishedAfterDeadline'=>$finishedAfterDeadline[0]['finishedAfterDeadline'],
                 'notFinished'=>$notFinished[0]['notFinished'],
+                'top_employees' => $top_employees,
+                'top_roles' => $top_roles,
+                'top_roles_colors' => $top_roles_colors
             ]
         ]);
     }

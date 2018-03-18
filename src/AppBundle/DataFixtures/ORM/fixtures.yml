@@ -32,3 +32,12 @@ AppBundle\Entity\Job:
     updated_at: '<dateTimeBetween("-20 days","now")>'
     is_answered: '0'
 
+
+AppBundle\Entity\Answer:
+  answer_{1..15}:
+    job: '@job_<numberBetween(1,100)>'
+    response: '{}'
+    answered_at: '<dateTimeBetween("-10 days","now")>'
+
+
+
