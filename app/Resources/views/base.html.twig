@@ -219,8 +219,6 @@
     <script type="text/javascript">
         $(document).ready(function () {
 
-            // demo.initChartist();
-
             $('.sidebar-wrapper').on('click', 'li', function () {
                 $(".active").removeClass('active');
                 $(this).addClass('active');
@@ -230,7 +228,7 @@
 
             {% if user.name is defined %}
             $.notify({
-                icon: 'pe-7s-user',
+                icon: 'ti-user',
                 message: "Welcome {{ user.name }} {{ user.surname }}!"
 
             }, {
