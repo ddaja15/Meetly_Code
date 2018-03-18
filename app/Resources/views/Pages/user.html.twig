@@ -140,12 +140,12 @@
     {{ parent() }}
 
     <script>
-        $(document).ready(function () {
 
-            $('.active').removeClass('active');
-            $("#settings-active").parent().parent().addClass('active');
-
+        $(document).ready(function(){
+            $("#settings-active").parent().parent().addClass("active");
         });
+
     </script>
 
 {% endblock %}
+

@@ -1240,17 +1240,17 @@
 
 {% endblock %}
 
-
 {% block javascripts %}
 
     {{ parent() }}
 
-
   <script>
-      $(document).ready(function () {
-          $('.active').removeClass('active');
-          $("#reports-active").parent().parent().addClass('active');
+
+      $(document).ready(function(){
+          $("#reports-active").parent().parent().addClass("active");
       });
+
   </script>
 
 {% endblock %}
+

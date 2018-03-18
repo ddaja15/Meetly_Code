@@ -6,7 +6,6 @@ var map;
 
 $(document).ready(function () {
 
-
     var myLatlng = new google.maps.LatLng(41.3275, 19.8187);
 
     map = new google.maps.Map(document.getElementById('map'), {

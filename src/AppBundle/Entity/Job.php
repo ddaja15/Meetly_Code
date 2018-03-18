@@ -8,7 +8,6 @@
 
 namespace AppBundle\Entity;
 
-
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -315,7 +314,7 @@ class Job
     /**
      * @return mixed
      */
-    public function getisAnswered()
+    public function getIsAnswered()
     {
         return $this->is_answered;
     }

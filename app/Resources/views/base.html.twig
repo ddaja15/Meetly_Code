@@ -74,7 +74,7 @@
                         <li>
                             <a href="{{ path('employee') }}">
                                 <i class="ti-user"></i>
-                                <p id="employee-active">Employees</p>
+                                <p id="employees-active">Employees</p>
                             </a>
                         </li>
 
@@ -87,8 +87,8 @@
 
                         <li>
                             <a href="{{ path('user') }}">
-                                <i class="ti-settings"></i>
-                                <p  id="settings-active">Settings</p>
+                                <i class="ti-pencil-alt2"></i>
+                                <p id="settings-active">Settings</p>
                             </a>
                         </li>
 
@@ -216,20 +216,19 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-
     <script type="text/javascript">
         $(document).ready(function () {
 
-            // $('.sidebar-wrapper').on('click', 'li', function () {
-
-            // });
-
-
-            // demo.initChartist();
+            $('.sidebar-wrapper').on('click', 'li', function () {
+                $(".active").removeClass('active');
+                $(this).addClass('active');
+                console.log($(".active"));
+                console.log($(this));
+            });
 
             {% if user.name is defined %}
             $.notify({
-                icon: 'pe-7s-user',
+                icon: 'ti-user',
                 message: "Welcome {{ user.name }} {{ user.surname }}!"
 
             }, {
