@@ -114,7 +114,7 @@ class DefaultController extends Controller
                 FROM user
                 GROUP BY role
                 ORDER BY count(user.id)
-                DESC LIMIT 7";
+                DESC LIMIT 5";
 
         $stmt = $em->getConnection()->prepare($sql);
         $stmt->execute();
