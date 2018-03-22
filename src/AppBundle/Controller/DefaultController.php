@@ -333,4 +333,31 @@ class DefaultController extends Controller
 
         return new Response(json_encode($notification));
     }
+
+
+
+    /**
+     * @Route("/jobs",name="jobs")
+     */
+    public function jobsAction(Request $request)
+    {
+
+        $em = $this->getDoctrine()->getManager();
+
+        $sql = "SELECT job.id as job_id, user_id, title, deadline, form, lat, lng,
+                    deadline, priority, reward, job_diff, created_at, updated_at, is_answered,
+                    a.id as answer_id, a.response, answered_at
+                FROM job
+                LEFT JOIN answer a ON job.id = a.job_id ORDER BY created_at DESC";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $jobs = $stmt->fetchAll();
+
+
+        return $this->render('Pages/jobs.html.twig', [
+            'jobs' => $jobs,
+        ]);
+    }
+
+
 }
