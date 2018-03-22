@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Jobs{% endblock %}
+
+
+{% block content %}
+    {#{{ dump() }}#}
+
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+
+                    {% for job in jobs %}
+
+                    <div class="card">
+                        <div class="header">
+                            <h4 class="title">Job {{ job.job_id }}</h4>
+                            <p class="category">Job Information</p>
+                        </div>
+                        <div class="content">
+                            <ul class="nav nav-tabs text-center">
+                                <li class="col-md-6"><a class="active-tab" data-toggle="tab" href="#job{{ job.job_id }}">Job</a></li>
+                                <li class="col-md-6"><a data-toggle="tab" href="#answer{{ job.job_id }}">Answer</a></li>
+                            </ul>
+
+                            <div class="tab-content" style="height: 100px;">
+                                <div id="job{{ job.job_id }}" class="tab-pane fade in">
+                                    <h3>{{ job.title }}</h3>
+                                    <p>{{ job.form }}</p>
+                                </div>
+                                <div id="answer{{ job.job_id }}" class="tab-pane fade">
+                                    <h3>
+                                        {% if job.answer_id is not null %}
+                                            <h3>{{ job.response }}</h3>
+                                            <p>{{ job.answered_at }}</p>
+                                        {% else %}
+                                            <h3>No answer</h3>
+                                        {% endif %}
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <hr>
+                                <div class="stats">
+                                    <i class="ti-check"></i> Data information certified
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+    {{ parent() }}
+
+    <script>
+        $(document).ready(function () {
+
+            $('.active').removeClass('active');
+            $("#jobs-active").parent().parent().addClass('active');
+
+            $('.active-tab').tab('show');
+
+            // a.twbsPagination();
+
+
+
+
+
+        });
+    </script>
+
+{% endblock %}
+
+

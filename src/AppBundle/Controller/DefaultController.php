@@ -3,7 +3,9 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Job;
+use AppBundle\Entity\Notification;
 use AppBundle\Entity\User;
+use Faker\Provider\DateTime;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -48,8 +50,7 @@ class DefaultController extends Controller
         $last_week_opened_jobs = array();
         $last_week_closed_jobs = array();
 
-        for($i = 6; $i >= 0; $i--){
-
+        for ($i = 6; $i >= 0; $i--) {
             $sql = "SELECT COUNT(id) as opened_jobs FROM job WHERE created_at = (CURRENT_DATE() - INTERVAL $i DAY)";
             $stmt = $em->getConnection()->prepare($sql);
             $stmt->execute();
@@ -109,7 +110,6 @@ class DefaultController extends Controller
 
         // Fourth chart data, Roles and role_count
 
-
         $sql = "SELECT count(user.id) as role_count, role
                 FROM user
                 GROUP BY role
@@ -125,14 +125,13 @@ class DefaultController extends Controller
         $top_roles_colors = array();
 
         $cnt = 0;
-        foreach ($top_roles as $role){
+        foreach ($top_roles as $role) {
             $role['color'] = $colors[$cnt++];
             array_push($top_roles_colors, $role);
         }
 
-//        array_push($top_roles, $colors);
 
-        // Color array
+
 
         // replace this example code with whatever you need
         return $this->render('Pages/dashboard.html.twig', [
@@ -195,7 +194,7 @@ class DefaultController extends Controller
     public function userAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('Pages/user.html.twig',[
+        return $this->render('Pages/user.html.twig', [
             'user'=>$this->getUser()
         ]);
     }
@@ -227,7 +226,8 @@ class DefaultController extends Controller
     /**
      * @Route("/add/job",name="addJob")
      */
-    public function addJobAction(Request $request){
+    public function addJobAction(Request $request)
+    {
 
         $job = new Job();
         $job->setTitle($request->request->get('job-title'));
@@ -245,7 +245,7 @@ class DefaultController extends Controller
         $job->setIsAnswered(0);
 
         $employee = $request->request->get('job-employee');
-        $data = explode(" ",$employee);
+        $data = explode(" ", $employee);
         $emp_name = $data[0];
         $emp_surname = $data[1];
 
@@ -268,6 +268,20 @@ class DefaultController extends Controller
 
         $em = $this->getDoctrine()->getManager();
         $em->persist($job);
+
+
+        $notification = new Notification();
+
+        $content = "New Job created by " . $this->getUser()->getName() . " " . $this->getUser()->getSurname() .
+            ". The job is assigned to " . $user->getName() . " " . $user->getSurname() .
+            ". Deadline: " . $request->request->get('job-deadline');
+
+//        $date = new DateTime();
+
+        $notification->setContent($content);
+        $notification->setCreatedAt(new \DateTime());
+
+        $em->persist($notification);
         $em->flush();
 
         return new Response('U kry');
@@ -277,7 +291,8 @@ class DefaultController extends Controller
     /**
      * @Route("/delete/job",name="deleteJob")
      */
-    public function deleteJobAction(Request $request){
+    public function deleteJobAction(Request $request)
+    {
 
         $delete_id = $request->request->get('id');
         $em = $this->getDoctrine()->getManager();
@@ -291,7 +306,8 @@ class DefaultController extends Controller
     /**
      * @Route("/get/employee",name="getEmployee")
      */
-    public function getEmployeeAction(Request $request){
+    public function getEmployeeAction(Request $request)
+    {
 
         $emp_id = $request->request->get('id');
         $em = $this->getDoctrine()->getManager();
@@ -302,5 +318,46 @@ class DefaultController extends Controller
 
         return new Response($user[0]['name']." ".$user[0]['surname']);
     }
+
+    /**
+     * @Route("/get/notification",name="getNotification")
+     */
+    public function getNotificationAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $sql = "SELECT * FROM notification WHERE created_at >= DATE_SUB(NOW(),INTERVAL 5 HOUR)";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $notification = $stmt->fetchAll();
+
+        return new Response(json_encode($notification));
+    }
+
+
+
+    /**
+     * @Route("/jobs",name="jobs")
+     */
+    public function jobsAction(Request $request)
+    {
+
+        $em = $this->getDoctrine()->getManager();
+
+        $sql = "SELECT job.id as job_id, user_id, title, deadline, form, lat, lng,
+                    deadline, priority, reward, job_diff, created_at, updated_at, is_answered,
+                    a.id as answer_id, a.response, answered_at
+                FROM job
+                LEFT JOIN answer a ON job.id = a.job_id ORDER BY created_at DESC";
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $jobs = $stmt->fetchAll();
+
+
+        return $this->render('Pages/jobs.html.twig', [
+            'jobs' => $jobs,
+        ]);
+    }
+
 
 }

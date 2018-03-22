@@ -57,14 +57,13 @@
 
     {{ parent() }}
 
+
     <script>
+        $(document).ready(function () {
 
-        $(document).ready(function(){
-            $("#employees-active").parent().parent().addClass("active");
+            $('.active').removeClass('active');
+            $("#employees-active").parent().parent().addClass('active');
+
         });
-
     </script>
-
-{% endblock %}
-
 

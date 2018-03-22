@@ -1,5 +1,21 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+
+    {{ parent() }}
+
+    <style>
+        thead > tr, tbody{
+            display:block;
+        }
+
+        td {
+            width: 100%;
+        }
+    </style>
+
+{% endblock %}
+
 {% block content %}
     {#{{ dump()}}#}
 
@@ -110,6 +126,41 @@
 
             <div class="row">
                 <div class="col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h4 class="title">Live feed</h4>
+                            <p class="category">Latest jobs</p>
+                        </div>
+                        <div class="content">
+                            {#<div class="table-full-width table-tasks" style="max-height: 200px; overflow: scroll; overflow-x: hidden; table-layout: fixed; border-collapse: collapse;">#}
+                            <div class="table-full-width table-tasks">
+                                <table class="table">
+                                    <thead style="width: 100%">
+                                        <tr>
+                                            <th style="float:left">Job</th>
+                                            <th style="float:right">Created at</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody style="overflow: auto; height: 200px; display: block" id="notification-table">
+
+                                        {#<tr><td></td></tr>#}
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="footer">
+                                <hr>
+                                <div class="stats">
+                                    <i class="ti-check"></i> Data information certified
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
                     <div class="card ">
 
                         <div class="header">
@@ -131,7 +182,6 @@
                                     <i class="ti-check"></i> Data information certified
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -569,6 +619,30 @@
                 window.__anim21278907124 = setTimeout(chart.update.bind(chart), 10000);
             });
             // End
+
+
+            // Notifications
+
+            setInterval(function(){
+                $.ajax({
+                    type: "POST",
+                    url: '/get/notification',
+
+                    success: function (msg) {
+                        var notifications = JSON.parse(msg);
+
+                        $('#notification-table').html('');
+
+                        notifications.forEach(function(element){
+                            $('#notification-table').append(
+                                '<tr style="width: 100%">' +
+                                '<td style="width: 83%">' + element.content +  '</td>' + '<td>' + element.created_at + '</td>' +
+                                '</tr>'
+                            );
+                        });
+                    }
+                });
+            }, 5000);
 
         });
     </script>
