@@ -1,0 +1,133 @@
+.job-wrapper {
+    height: 420px;
+    width: 654px;
+    margin: 10px auto;
+    border-radius: 7px 7px 7px 7px;
+    /* VIA CSS MATIC https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.job-img {
+    float: left;
+    height: 420px;
+    width: 327px;
+
+    /*test*/
+    position: relative;
+    text-align: center;
+    color: white;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.job-img .img-job {
+    border-radius: 7px 0 0 7px;
+}
+
+.job-info {
+    float: left;
+    height: 420px;
+    width: 327px;
+    border-radius: 0 7px 10px 7px;
+    background-color: #ffffff;
+}
+
+.job-text {
+    height: 300px;
+    width: 327px;
+}
+
+.job-text .job-h1 {
+    margin: 0 0 0 38px;
+    padding-top: 52px;
+    font-size: 30px;
+    color: #474747;
+}
+
+.job-text .job-h1,
+.job-price-btn .job-p {
+    font-family: 'Bentham', serif;
+}
+
+.job-text .job-h2 {
+    margin: 0 0 47px 38px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    letter-spacing: 0.2em;
+}
+
+.job-text .job-p {
+    /*height: 125px;*/
+    margin: 0 0 0 38px;
+    font-family: 'Playfair Display', serif;
+    color: #8d8d8d;
+    line-height: 1.7em;
+    font-size: 18px;
+    font-weight: lighter;
+    overflow: hidden;
+}
+
+.job-price-btn {
+    height: 103px;
+    width: 327px;
+    margin-top: 17px;
+    position: relative;
+}
+
+.job-price-btn .job-p {
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    height: 50px;
+    font-family: 'Trocchi', serif;
+    margin: 0 0 0 38px;
+    font-size: 28px;
+    font-weight: lighter;
+    /*color: #474747;*/
+}
+
+.job-span {
+    display: inline-block;
+    height: 50px;
+    font-family: 'Suranna', serif;
+    font-size: 34px;
+}
+
+.job-price-btn .job-btn {
+    /*float: right;*/
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    /*background-color: #9cebd5;*/
+    cursor: pointer;
+    outline: none;
+}
+
+.job-price-btn .job-btn:hover {
+    /*background-color: #79b0a1;*/
+}
+
+
+.img-txt-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

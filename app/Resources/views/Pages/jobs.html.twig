@@ -5,7 +5,8 @@
 {% block stylesheets %}
     {{ parent() }}
 
-    {#<link href="{{ asset('assets/css/dynamicForm.css') }}" rel="stylesheet"/>#}
+    <link href="{{ asset('assets/css/job/job.css') }}" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:100,200,400,500|Suranna|Trocchi" rel="stylesheet">
 
     <style>
         /*#easyPaginate {width:300px;}*/
@@ -13,6 +14,63 @@
         .easyPaginateNav a.current {font-weight:bold;text-decoration:underline;}
     </style>
 {% endblock %}
+
+
+{% block navbar %}
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <i class="ti-book"></i>
+                    Jobs
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+
+                    <li>
+                        <a class="search-btn">
+                            <i class="fa fa-search"></i>
+                            <p class="hidden-lg hidden-md">Search</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="ti-bell"></i>
+                            <p class="notification">5</p>
+                            <p>Notifications</p>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Notification 1</a></li>
+                            <li><a href="#">Notification 2</a></li>
+                            <li><a href="#">Notification 3</a></li>
+                            <li><a href="#">Notification 4</a></li>
+                            <li><a href="#">Another notification</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{{ path('logout') }}">
+                            <i class="ti-key"></i>
+                            <p>Log out</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+
+
 
 {% block content %}
     {{ dump() }}
@@ -27,82 +85,65 @@
 
                         {% for job in jobs %}
 
+
                             <page>
                             <div class="card">
-                                <div class="header">
-                                    <h4 class="title">Job {{ job.job_id }}</h4>
-                                    {#<p class="category">Job Information</p>#}
-                                </div>
-                                <div class="content">
+                                <div class="card-header">
                                     <ul class="nav nav-tabs text-center">
-                                        <li class="col-md-6"><a class="active-tab" data-toggle="tab" href="#job{{ job.job_id }}">Job{{ job.job_id }}</a></li>
-                                        <li class="col-md-6"><a data-toggle="tab" href="#answer{{ job.job_id }}">Answer</a></li>
+                                        <li class="col-md-3 nav-item">
+                                            <a class="nav-link active-tab" data-toggle="tab" href="#job{{ job.job_id }}">Job{{ job.job_id }}</a>
+                                        </li>
+                                        <li class="col-md-3 nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#answer{{ job.job_id }}">Answer</a>
+                                        </li>
                                     </ul>
 
-                                    <div class="tab-content" style="height: 400px;">
+                                </div>
+                                <div class="content card-body">
+
+                                    <div class="tab-content" style="height: 450px">
                                         <div id="job{{ job.job_id }}" class="tab-pane fade in">
-                                                <div class="header">
-                                                    <h4 class="title">{{ job.title }}</h4>
-                                                </div>
-
-                                                <div class="content">
-
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label>Employee</label>
-                                                                <p>{{ job.user_id }}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label>Deadline</label>
-                                                                <p>{{ job.deadline }}</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label>Priority</label>
-                                                                <p>{{ job.priority }}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <label>Reward</label>
-                                                                <p>{{ job.reward }}</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <label>Difficulty</label>
-                                                                <p>{{ job.job_diff }}</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <label>Created At</label>
-                                                                <p>{{ job.created_at }}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label>Form</label>
-                                                                <p>{{ job.form }}</p>
-                                                            </div>
-                                                        </div>
+                                            <div class="job-wrapper">
+                                                <div class="job-img">
+                                                    <img class="img-job" height="420" width="327" src="{{ asset('assets/img/job_images/job-photo.png') }}">
+                                                    <div class="img-txt-center">
+                                                        {{ job.description }}
                                                     </div>
                                                 </div>
+                                                <div class="job-info">
+                                                    <div class="job-text">
+                                                        <h1 class="job-h1 text-center">{{ job.title }}</h1>
+                                                        <h2 class="job-h2 text-center">by {{ job.name }} {{ job.surname }}</h2>
+                                                        <p class="job-p"><strong>Priority:</strong>
+                                                            {% if job.priority == 0 %}
+                                                                Low
+                                                            {% elseif job.priority == 1 %}
+                                                                Medium
+                                                            {% else %}
+                                                                High
+                                                            {% endif %}
+                                                        </p>
+                                                        <p class="job-p"><strong>Difficulty:</strong>
+                                                            {% if job.job_diff == 0 %}
+                                                                Easy
+                                                            {% elseif job.job_diff == 1 %}
+                                                                Challenging
+                                                            {% elseif job.job_diff == 2 %}
+                                                                Hard
+                                                            {% else %}
+                                                                Extreme
+                                                            {% endif %}
+                                                        </p>
+                                                        <p class="job-p"><strong>Reward:</strong> ${{ job.reward }}</p>
+                                                        <p class="job-p"><strong>Deadline:</strong> {{ job.deadline }}</p>
+                                                    </div>
+                                                    <div class="job-price-btn" style="display: flex; justify-content: center; align-items: center">
+                                                        <button class="job-btn btn-danger" type="button" data-toggle="modal" id="delete-{{ job.job_id }}" data-target="#delete-modal">Delete</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div id="answer{{ job.job_id }}" class="tab-pane fade">
+                                        <div id="answer{{ job.job_id }}" class="tab-pane fade" style="height: 200px">
                                             <h3>
                                                 {% if job.answer_id is not null %}
                                                     <h3>{{ job.response }}</h3>
@@ -124,6 +165,46 @@
                             </page>
                         {% endfor %}
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block modal %}
+
+    <div id="delete-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <center>
+                        <h3 id="myModalLabel">Delete Job</h3>
+                    </center>
+                </div>
+
+                <div class="modal-body" id="myWizard">
+                    <div class="text-center" style="margin-bottom: 0px !important;">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <h3>Do you really want to delete this job?</h3>
+                                        <h7><strong>Note:</strong> The answer for this job will be deleted aswell.</h7>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-1"></div>
+                        <button class="btn btn-danger col-md-5">Yes</button>
+                        <button class="btn btn col-md-5 search-btn-modal" data-dismiss="modal" data-toggle="tab">No</button>
+
+                        <div class="col-md-1"></div>
                     </div>
                 </div>
             </div>
@@ -159,8 +240,12 @@
 
             $('#easyPaginate').easyPaginate({
                 paginateElement: 'page',
-                elementsPerPage: 3,
-                effect: 'climb'
+                elementsPerPage: 5,
+                effect: 'climb',
+                firstButtonText: 'First',
+                lastButtonText: 'Last',
+                nextButtonText: 'Next',
+                prevButtonText: 'Prev'
             });
 
         });
