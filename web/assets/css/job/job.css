@@ -1,3 +1,7 @@
+*{
+    font-family: 'Raleway';
+
+}
 .job-wrapper {
     height: 350px;
     width: 654px;
@@ -18,8 +22,6 @@
     position: relative;
     text-align: center;
     color: white;
-
-    font-family: 'Playfair Display', serif;
     font-size: 30px;
 }
 
@@ -36,7 +38,7 @@
 }
 
 .job-text {
-    height: 235px;
+    /*height: 235px;*/
     width: 327px;
 }
 
@@ -49,7 +51,6 @@
 
 .job-text .job-h1,
 .job-price-btn .job-p {
-    font-family: 'Bentham', serif;
 }
 
 .job-text .job-h2 {
@@ -64,8 +65,7 @@
 
 .job-text .job-p {
     /*height: 125px;*/
-    margin: 0 0 0 75px;
-    font-family: 'Playfair Display', serif;
+    /*margin: 0 0 0 75px;*/
     color: #8d8d8d;
     line-height: 1.7em;
     font-size: 18px;
@@ -75,7 +75,7 @@
 
 .job-price-btn {
     height: 75px;
-    width: 327px;
+    /*width: 327px;*/
     margin-top: 17px;
     position: relative;
 }
@@ -85,7 +85,6 @@
     position: absolute;
     top: -13px;
     height: 35px;
-    font-family: 'Trocchi', serif;
     margin: 0 0 0 38px;
     font-size: 28px;
     font-weight: lighter;
@@ -95,16 +94,15 @@
 .job-span {
     display: inline-block;
     height: 35px;
-    font-family: 'Suranna', serif;
     font-size: 34px;
 }
 
 .job-price-btn .job-btn {
     /*float: right;*/
-    display: inline-block;
+    /*display: inline-block;*/
     height: 35px;
     width: 126px;
-    margin: 0 40px 0 16px;
+    /*margin: 0 40px 0 16px;*/
     box-sizing: border-box;
     border: transparent;
     border-radius: 60px;
@@ -139,5 +137,31 @@
     position: relative;
     top: -50px;
     margin-bottom: -60px;
+}
+
+/*
+ *  STYLE 2
+ */
+
+#style2::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    /*border-radius: 10px;*/
+    background-color: #F5F5F5;
+}
+
+#style2::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+
+
+}
+
+#style2::-webkit-scrollbar-thumb
+{
+    border-radius: 2px;
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
+    background-color: #d9534f !important;
 }
 
