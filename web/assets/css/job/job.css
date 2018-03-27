@@ -134,3 +134,10 @@
 #my-search{
   height: 34px;
 }
+
+#response{
+    position: relative;
+    top: -50px;
+    margin-bottom: -60px;
+}
+
