@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1755258e-8d16-43e7-9c23-41b14e129e34" name="Default" comment="" />
+    <list default="true" id="1755258e-8d16-43e7-9c23-41b14e129e34" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/job/job.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/job_images/job-photo.png" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,27 +15,145 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="meetly@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="meetly@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="meetly@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="meetly: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dashboard.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="133" column="26" lean-forward="false" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
+              <folding>
+                <marker date="1521729268644" expanded="true" signature="28141:28152" ph="..." />
+                <marker date="1521729268644" expanded="true" signature="28202:28212" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="354" column="34" lean-forward="false" selection-start-line="354" selection-start-column="34" selection-end-line="354" selection-end-column="34" />
+              <folding>
+                <marker date="1522087408498" expanded="true" signature="672:732" ph="SELECT COUNT... user" />
+                <marker date="1522087408498" expanded="true" signature="894:956" ph="SELECT COUNT... job" />
+                <marker date="1522087408498" expanded="true" signature="1115:1228" ph="SELECT COUNT... job" />
+                <marker date="1522087408498" expanded="true" signature="1393:1512" ph="SELECT COUNT... answer" />
+                <marker date="1522087408498" expanded="true" signature="1823:1917" ph="SELECT COUNT... job" />
+                <marker date="1522087408498" expanded="true" signature="2155:2253" ph="SELECT COUNT... answer" />
+                <marker date="1522087408498" expanded="true" signature="2533:2691" ph="SELECT COUNT... job" />
+                <marker date="1522087408498" expanded="true" signature="2878:3035" ph="SELECT COUNT... job" />
+                <marker date="1522087408498" expanded="true" signature="3217:3283" ph="SELECT COUNT... job" />
+                <marker date="1522087408498" expanded="true" signature="3457:3477" ph="SELECT count... job" />
+                <marker date="1522087408498" expanded="true" signature="3457:4374" ph="SELECT count... job" />
+                <marker date="1522087408498" expanded="true" signature="3457:4375" ph="SELECT count... job" />
+                <marker date="1522087408498" expanded="true" signature="3554:3834" ph="SELECT count... job" />
+                <marker date="1522087408498" expanded="true" signature="4573:4738" ph="SELECT count... user" />
+                <marker date="1522087408498" expanded="true" signature="4573:4739" ph="SELECT count... user" />
+                <marker date="1522087408498" expanded="true" signature="6551:6588" ph="select * fro... user" />
+                <marker date="1522087408498" expanded="true" signature="6724:6763" ph="SELECT * FRO... job" />
+                <marker date="1522087408498" expanded="true" signature="10267:10294" ph="DELETE FROM job... " />
+                <marker date="1522087408498" expanded="true" signature="10677:10707" ph="select * fro... user" />
+                <marker date="1522087408498" expanded="true" signature="11117:11160" ph="SELECT * FRO... notification" />
+                <marker date="1522087408498" expanded="true" signature="11117:11195" ph="SELECT * FRO... notification" />
+                <marker date="1522087408498" expanded="true" signature="11561:11956" ph="SELECT * FRO... job" />
+                <marker date="1522087408498" expanded="true" signature="11561:11985" ph="SELECT job.i... job" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jobs.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="96" column="84" lean-forward="false" selection-start-line="96" selection-start-column="83" selection-end-line="96" selection-end-column="84" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maps.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="68" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="job.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/css/job/job.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="105" column="14" lean-forward="false" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="easyPaginate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/js/jobs/easyPaginate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="73" column="54" lean-forward="false" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
+              <folding>
+                <marker date="1522012663097" expanded="true" signature="2035:2050" ph="..." />
+                <marker date="1522012663097" expanded="true" signature="2297:2312" ph="..." />
+                <marker date="1522012663097" expanded="true" signature="2534:2549" ph="..." />
+                <marker date="1522012663097" expanded="true" signature="2774:2789" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>account</find>
-      <find>data-image</find>
-      <find>update</find>
       <find>salar</find>
       <find>phone</find>
       <find>section</find>
@@ -57,11 +181,15 @@
       <find>easy</find>
       <find>addClass</find>
       <find>easyPaginateNav</find>
+      <find>product</find>
+      <find>myModal</find>
+      <find>job-p</find>
     </findStrings>
     <replaceStrings>
       <replace>/paper-assets/</replace>
       <replace>sidebarActive</replace>
       <replace>activeSidebar</replace>
+      <replace>job</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -112,19 +240,20 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Answer.php" />
         <option value="$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Provider/Base.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6d2645e9-685e-4898-a236-48dda3c2d694/console.sql" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Notification.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6d2645e9-685e-4898-a236-48dda3c2d694/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/web/assets/css/light-bootstrap-dashboard.css" />
         <option value="$PROJECT_DIR$/web/assets/sass/lbd/_navbars.scss" />
         <option value="$PROJECT_DIR$/web/assets/js/jobs/jobs.js" />
         <option value="$PROJECT_DIR$/web/assets/css/jobs/jobs.css" />
         <option value="$PROJECT_DIR$/web/assets/js/jobs/easyPaginate.js" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/web/assets/css/job/job.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig" />
       </list>
     </option>
@@ -189,7 +318,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -230,9 +359,147 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DoctrineMigrations" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ORM" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="job_images" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="map" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,16 +512,16 @@
     <property name="SearchEverywhereHistoryKey" value="numberBe&#9;null&#9;null&#10;base&#9;FILE&#9;file://C:/xampp/htdocs/meetly/vendor/fzaninotto/faker/src/Faker/Provider/Base.php&#10;numberBet&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\app\Resources\views\Pages" />
-      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\web" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\meetly\web\assets\img\job_images" />
       <recent name="C:\xampp\htdocs\meetly\web\assets\js\jobs" />
       <recent name="C:\xampp\htdocs\meetly\web\paper-assets" />
       <recent name="C:\xampp\htdocs\meetly\web\assets\css" />
       <recent name="C:\xampp\htdocs\meetly\web\assets\marker_icons" />
-      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\app\Resources\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\app\Resources\views\Pages" />
+      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -308,15 +575,6 @@
       <PhpTestRunnerSettings />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -336,6 +594,14 @@
       <test-directory />
       <recursive>false</recursive>
       <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -368,8 +634,8 @@
       <workItem from="1521712574445" duration="15062000" />
       <workItem from="1521731193511" duration="75000" />
       <workItem from="1521731443740" duration="7505000" />
-      <workItem from="1522004402141" duration="7062000" />
-      <workItem from="1522139698139" duration="315000" />
+      <workItem from="1522004402141" duration="7223000" />
+      <workItem from="1522080687079" duration="9677000" />
     </task>
     <task id="LOCAL-00001" summary="You can now create jobs. No validation still">
       <created>1520779432267</created>
@@ -427,38 +693,67 @@
       <option name="project" value="LOCAL" />
       <updated>1521739233012</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Pagination almost done. UI fixes needed.">
+      <created>1522015291585</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1522015291600</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138750000" />
+    <option name="totallyTimeSpent" value="148273000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59703946" sideWeight="0.50907713" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.052193645" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19213313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2749616" sideWeight="0.49092284" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21052632" sideWeight="0.49092284" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62335527" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59703946" sideWeight="0.50907713" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21052632" sideWeight="0.49092284" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62335527" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19213313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -472,28 +767,14 @@
     <MESSAGE value="Settings icon changed. Database imported on Server. Application running on Server-Hosted-Database. Logging in as a specific user and his/her jobs shown on map." />
     <MESSAGE value="Notification entity migrated. Live feed on dashboard. Trigger on answer insert(create notification for live feed)." />
     <MESSAGE value="Added jobs on sidebar. Jobs and answers showing using tabs on jobs.html.twig. Pagination needed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added jobs on sidebar. Jobs and answers showing using tabs on jobs.html.twig. Pagination needed." />
+    <MESSAGE value="Pagination almost done. UI fixes needed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pagination almost done. UI fixes needed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/themify-icons/na.svg" />
     <entry file="file://$PROJECT_DIR$/web/assets/css/themify-icons/alarm-clock.svg" />
     <entry file="file://$PROJECT_DIR$/web/assets/css/themify-icons/agenda.svg" />
     <entry file="file://$PROJECT_DIR$/web/assets/css/themify-icons.css" />
@@ -679,25 +960,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3196">
-          <caret line="188" column="20" lean-forward="false" selection-start-line="188" selection-start-column="20" selection-end-line="189" selection-end-column="18" />
-          <folding />
+    <entry file="das://table:/eece8b0c/6d2645e9-685e-4898-a236-48dda3c2d694/meetly.answer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/eece8b0c/6d2645e9-685e-4898-a236-48dda3c2d694/meetly.answer" />
-    <entry file="das://table:/eece8b0c/6d2645e9-685e-4898-a236-48dda3c2d694/meetly.job" />
+    <entry file="das://table:/eece8b0c/6d2645e9-685e-4898-a236-48dda3c2d694/meetly.job">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="133" column="26" lean-forward="false" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
+          <folding>
+            <marker date="1521729268644" expanded="true" signature="28141:28152" ph="..." />
+            <marker date="1521729268644" expanded="true" signature="28202:28212" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d2645e9-685e-4898-a236-48dda3c2d694/console_1.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d2645e9-685e-4898-a236-48dda3c2d694/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="64" lean-forward="false" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -749,64 +1050,103 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/jobs/jobs.js" />
     <entry file="file://$PROJECT_DIR$/web/assets/css/jobs/jobs.css" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="311" column="20" lean-forward="false" selection-start-line="311" selection-start-column="20" selection-end-line="396" selection-end-column="26" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/jobs/easyPaginate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="73" column="54" lean-forward="false" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
+          <folding>
+            <marker date="1522012663097" expanded="true" signature="2035:2050" ph="..." />
+            <marker date="1522012663097" expanded="true" signature="2297:2312" ph="..." />
+            <marker date="1522012663097" expanded="true" signature="2534:2549" ph="..." />
+            <marker date="1522012663097" expanded="true" signature="2774:2789" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/img/hero-image-1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="188" column="4" lean-forward="false" selection-start-line="188" selection-start-column="4" selection-end-line="189" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/assets/css/job/job.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="133" column="26" lean-forward="false" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
+        <state relative-caret-position="140">
+          <caret line="105" column="14" lean-forward="false" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/dynamicForm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="361" column="0" lean-forward="true" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
+        <state relative-caret-position="288">
+          <caret line="354" column="34" lean-forward="false" selection-start-line="354" selection-start-column="34" selection-end-line="354" selection-end-column="34" />
           <folding>
-            <marker date="1522059730015" expanded="true" signature="672:732" ph="SELECT COUNT... user" />
-            <marker date="1522059730015" expanded="true" signature="894:956" ph="SELECT COUNT... job" />
-            <marker date="1522059730015" expanded="true" signature="1115:1228" ph="SELECT COUNT... job" />
-            <marker date="1522059730015" expanded="true" signature="1393:1512" ph="SELECT COUNT... answer" />
-            <marker date="1522059730015" expanded="true" signature="1823:1917" ph="SELECT COUNT... job" />
-            <marker date="1522059730015" expanded="true" signature="2155:2253" ph="SELECT COUNT... answer" />
-            <marker date="1522059730015" expanded="true" signature="2533:2691" ph="SELECT COUNT... job" />
-            <marker date="1522059730015" expanded="true" signature="2878:3035" ph="SELECT COUNT... job" />
-            <marker date="1522059730015" expanded="true" signature="3217:3283" ph="SELECT COUNT... job" />
-            <marker date="1522059730015" expanded="true" signature="3457:4374" ph="SELECT count... job" />
-            <marker date="1522059730015" expanded="true" signature="3554:3834" ph="SELECT count... job" />
-            <marker date="1522059730015" expanded="true" signature="4573:4739" ph="SELECT count... user" />
-            <marker date="1522059730015" expanded="true" signature="6551:6588" ph="select * fro... user" />
-            <marker date="1522059730015" expanded="true" signature="6724:6763" ph="SELECT * FRO... job" />
-            <marker date="1522059730015" expanded="true" signature="10267:10294" ph="DELETE FROM " />
-            <marker date="1522059730015" expanded="true" signature="10677:10707" ph="select * fro... user" />
-            <marker date="1522059730015" expanded="true" signature="11117:11195" ph="SELECT * FRO... notification" />
-            <marker date="1522059730015" expanded="true" signature="11561:11891" ph="SELECT job.i... job" />
+            <marker date="1522087408498" expanded="true" signature="672:732" ph="SELECT COUNT... user" />
+            <marker date="1522087408498" expanded="true" signature="894:956" ph="SELECT COUNT... job" />
+            <marker date="1522087408498" expanded="true" signature="1115:1228" ph="SELECT COUNT... job" />
+            <marker date="1522087408498" expanded="true" signature="1393:1512" ph="SELECT COUNT... answer" />
+            <marker date="1522087408498" expanded="true" signature="1823:1917" ph="SELECT COUNT... job" />
+            <marker date="1522087408498" expanded="true" signature="2155:2253" ph="SELECT COUNT... answer" />
+            <marker date="1522087408498" expanded="true" signature="2533:2691" ph="SELECT COUNT... job" />
+            <marker date="1522087408498" expanded="true" signature="2878:3035" ph="SELECT COUNT... job" />
+            <marker date="1522087408498" expanded="true" signature="3217:3283" ph="SELECT COUNT... job" />
+            <marker date="1522087408498" expanded="true" signature="3457:3477" ph="SELECT count... job" />
+            <marker date="1522087408498" expanded="true" signature="3457:4374" ph="SELECT count... job" />
+            <marker date="1522087408498" expanded="true" signature="3457:4375" ph="SELECT count... job" />
+            <marker date="1522087408498" expanded="true" signature="3554:3834" ph="SELECT count... job" />
+            <marker date="1522087408498" expanded="true" signature="4573:4738" ph="SELECT count... user" />
+            <marker date="1522087408498" expanded="true" signature="4573:4739" ph="SELECT count... user" />
+            <marker date="1522087408498" expanded="true" signature="6551:6588" ph="select * fro... user" />
+            <marker date="1522087408498" expanded="true" signature="6724:6763" ph="SELECT * FRO... job" />
+            <marker date="1522087408498" expanded="true" signature="10267:10294" ph="DELETE FROM job... " />
+            <marker date="1522087408498" expanded="true" signature="10677:10707" ph="select * fro... user" />
+            <marker date="1522087408498" expanded="true" signature="11117:11160" ph="SELECT * FRO... notification" />
+            <marker date="1522087408498" expanded="true" signature="11117:11195" ph="SELECT * FRO... notification" />
+            <marker date="1522087408498" expanded="true" signature="11561:11956" ph="SELECT * FRO... job" />
+            <marker date="1522087408498" expanded="true" signature="11561:11985" ph="SELECT job.i... job" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="42" column="95" lean-forward="false" selection-start-line="42" selection-start-column="95" selection-end-line="42" selection-end-column="95" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="96" column="84" lean-forward="false" selection-start-line="96" selection-start-column="83" selection-end-line="96" selection-end-column="84" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
