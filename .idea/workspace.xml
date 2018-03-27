@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1755258e-8d16-43e7-9c23-41b14e129e34" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/job/job.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/job_images/job-photo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/job_images/answer-photo.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/job/job.css" afterPath="$PROJECT_DIR$/web/assets/css/job/job.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,7 +51,7 @@
       <file leaf-file-name="dashboard.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="17">
               <caret line="133" column="26" lean-forward="false" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
               <folding>
                 <marker date="1521729268644" expanded="true" signature="28141:28152" ph="..." />
@@ -64,32 +64,33 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="354" column="34" lean-forward="false" selection-start-line="354" selection-start-column="34" selection-end-line="354" selection-end-column="34" />
+            <state relative-caret-position="203">
+              <caret line="368" column="55" lean-forward="false" selection-start-line="368" selection-start-column="55" selection-end-line="368" selection-end-column="55" />
               <folding>
-                <marker date="1522087408498" expanded="true" signature="672:732" ph="SELECT COUNT... user" />
-                <marker date="1522087408498" expanded="true" signature="894:956" ph="SELECT COUNT... job" />
-                <marker date="1522087408498" expanded="true" signature="1115:1228" ph="SELECT COUNT... job" />
-                <marker date="1522087408498" expanded="true" signature="1393:1512" ph="SELECT COUNT... answer" />
-                <marker date="1522087408498" expanded="true" signature="1823:1917" ph="SELECT COUNT... job" />
-                <marker date="1522087408498" expanded="true" signature="2155:2253" ph="SELECT COUNT... answer" />
-                <marker date="1522087408498" expanded="true" signature="2533:2691" ph="SELECT COUNT... job" />
-                <marker date="1522087408498" expanded="true" signature="2878:3035" ph="SELECT COUNT... job" />
-                <marker date="1522087408498" expanded="true" signature="3217:3283" ph="SELECT COUNT... job" />
-                <marker date="1522087408498" expanded="true" signature="3457:3477" ph="SELECT count... job" />
-                <marker date="1522087408498" expanded="true" signature="3457:4374" ph="SELECT count... job" />
-                <marker date="1522087408498" expanded="true" signature="3457:4375" ph="SELECT count... job" />
-                <marker date="1522087408498" expanded="true" signature="3554:3834" ph="SELECT count... job" />
-                <marker date="1522087408498" expanded="true" signature="4573:4738" ph="SELECT count... user" />
-                <marker date="1522087408498" expanded="true" signature="4573:4739" ph="SELECT count... user" />
-                <marker date="1522087408498" expanded="true" signature="6551:6588" ph="select * fro... user" />
-                <marker date="1522087408498" expanded="true" signature="6724:6763" ph="SELECT * FRO... job" />
-                <marker date="1522087408498" expanded="true" signature="10267:10294" ph="DELETE FROM job... " />
-                <marker date="1522087408498" expanded="true" signature="10677:10707" ph="select * fro... user" />
-                <marker date="1522087408498" expanded="true" signature="11117:11160" ph="SELECT * FRO... notification" />
-                <marker date="1522087408498" expanded="true" signature="11117:11195" ph="SELECT * FRO... notification" />
-                <marker date="1522087408498" expanded="true" signature="11561:11956" ph="SELECT * FRO... job" />
-                <marker date="1522087408498" expanded="true" signature="11561:11985" ph="SELECT job.i... job" />
+                <marker date="1522170405736" expanded="true" signature="672:732" ph="SELECT COUNT... user" />
+                <marker date="1522170405736" expanded="true" signature="894:956" ph="SELECT COUNT... job" />
+                <marker date="1522170405736" expanded="true" signature="1115:1228" ph="SELECT COUNT... job" />
+                <marker date="1522170405736" expanded="true" signature="1393:1512" ph="SELECT COUNT... answer" />
+                <marker date="1522170405736" expanded="true" signature="1823:1917" ph="SELECT COUNT... job" />
+                <marker date="1522170405736" expanded="true" signature="2155:2253" ph="SELECT COUNT... answer" />
+                <marker date="1522170405736" expanded="true" signature="2533:2691" ph="SELECT COUNT... job" />
+                <marker date="1522170405736" expanded="true" signature="2878:3035" ph="SELECT COUNT... job" />
+                <marker date="1522170405736" expanded="true" signature="3217:3283" ph="SELECT COUNT... job" />
+                <marker date="1522170405736" expanded="true" signature="3457:3477" ph="SELECT count... job" />
+                <marker date="1522170405736" expanded="true" signature="3457:4374" ph="SELECT count... job" />
+                <marker date="1522170405736" expanded="true" signature="3457:4375" ph="SELECT count... job" />
+                <marker date="1522170405736" expanded="true" signature="3554:3834" ph="SELECT count... job" />
+                <marker date="1522170405736" expanded="true" signature="4573:4738" ph="SELECT count... user" />
+                <marker date="1522170405736" expanded="true" signature="4573:4739" ph="SELECT count... user" />
+                <marker date="1522170405736" expanded="true" signature="6551:6588" ph="select * fro... user" />
+                <marker date="1522170405736" expanded="true" signature="6724:6763" ph="SELECT * FRO... job" />
+                <marker date="1522170405736" expanded="true" signature="10267:10294" ph="DELETE FROM job... " />
+                <marker date="1522170405736" expanded="true" signature="10677:10707" ph="select * fro... user" />
+                <marker date="1522170405736" expanded="true" signature="11117:11160" ph="SELECT * FRO... notification" />
+                <marker date="1522170405736" expanded="true" signature="11117:11195" ph="SELECT * FRO... notification" />
+                <marker date="1522170405736" expanded="true" signature="11561:11956" ph="SELECT * FRO... job" />
+                <marker date="1522170405736" expanded="true" signature="11561:11985" ph="SELECT job.i... job" />
+                <marker date="1522170405736" expanded="true" signature="12459:12951" ph="SELECT job.i... job" />
               </folding>
             </state>
           </provider>
@@ -98,13 +99,32 @@
       <file leaf-file-name="jobs.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="96" column="84" lean-forward="false" selection-start-line="96" selection-start-column="83" selection-end-line="96" selection-end-column="84" />
+            <state relative-caret-position="-1426">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <marker date="1522171451728" expanded="true" signature="21671:21730" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console_1.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d2645e9-685e-4898-a236-48dda3c2d694/console_1.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="47" column="50" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="47" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,15 +132,9 @@
       <file leaf-file-name="maps.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="68" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1022">
+              <caret line="496" column="53" lean-forward="false" selection-start-line="496" selection-start-column="53" selection-end-line="496" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,8 +142,8 @@
       <file leaf-file-name="job.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/css/job/job.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="105" column="14" lean-forward="false" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="14" />
+            <state relative-caret-position="284">
+              <caret line="134" column="12" lean-forward="false" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -154,10 +168,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>salar</find>
-      <find>phone</find>
-      <find>section</find>
-      <find>header</find>
       <find>select</find>
       <find>add section</find>
       <find>notify</find>
@@ -184,6 +194,10 @@
       <find>product</find>
       <find>myModal</find>
       <find>job-p</find>
+      <find>height</find>
+      <find>uppercase</find>
+      <find>console.l</find>
+      <find>active-tab</find>
     </findStrings>
     <replaceStrings>
       <replace>/paper-assets/</replace>
@@ -245,15 +259,15 @@
         <option value="$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6d2645e9-685e-4898-a236-48dda3c2d694/console_1.sql" />
         <option value="$PROJECT_DIR$/web/assets/css/light-bootstrap-dashboard.css" />
         <option value="$PROJECT_DIR$/web/assets/sass/lbd/_navbars.scss" />
         <option value="$PROJECT_DIR$/web/assets/js/jobs/jobs.js" />
         <option value="$PROJECT_DIR$/web/assets/css/jobs/jobs.css" />
         <option value="$PROJECT_DIR$/web/assets/js/jobs/easyPaginate.js" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/web/assets/css/job/job.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig" />
+        <option value="$PROJECT_DIR$/web/assets/css/job/job.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6d2645e9-685e-4898-a236-48dda3c2d694/console_1.sql" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig" />
       </list>
     </option>
@@ -359,6 +373,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -455,13 +470,6 @@
               <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -472,34 +480,10 @@
               <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="job_images" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="meetly" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meetly" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="map" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -512,16 +496,16 @@
     <property name="SearchEverywhereHistoryKey" value="numberBe&#9;null&#9;null&#10;base&#9;FILE&#9;file://C:/xampp/htdocs/meetly/vendor/fzaninotto/faker/src/Faker/Provider/Base.php&#10;numberBet&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\app\Resources\views\Pages" />
+      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\web" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\meetly\web\assets\img\job_images" />
       <recent name="C:\xampp\htdocs\meetly\web\assets\js\jobs" />
       <recent name="C:\xampp\htdocs\meetly\web\paper-assets" />
       <recent name="C:\xampp\htdocs\meetly\web\assets\css" />
       <recent name="C:\xampp\htdocs\meetly\web\assets\marker_icons" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\app\Resources\views\Pages" />
-      <recent name="C:\xampp\htdocs\Symfony Projects\Meetly\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -635,7 +619,8 @@
       <workItem from="1521731193511" duration="75000" />
       <workItem from="1521731443740" duration="7505000" />
       <workItem from="1522004402141" duration="7223000" />
-      <workItem from="1522080687079" duration="9677000" />
+      <workItem from="1522080687079" duration="10371000" />
+      <workItem from="1522144108640" duration="8851000" />
     </task>
     <task id="LOCAL-00001" summary="You can now create jobs. No validation still">
       <created>1520779432267</created>
@@ -700,21 +685,29 @@
       <option name="project" value="LOCAL" />
       <updated>1522015291600</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="UI fixes.">
+      <created>1522090476158</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1522090476158</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148273000" />
+    <option name="totallyTimeSpent" value="157818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62335527" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2246596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59703946" sideWeight="0.50907713" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19213313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12254161" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -725,32 +718,10 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62335527" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59703946" sideWeight="0.50907713" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21052632" sideWeight="0.49092284" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62335527" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19213313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -768,7 +739,9 @@
     <MESSAGE value="Notification entity migrated. Live feed on dashboard. Trigger on answer insert(create notification for live feed)." />
     <MESSAGE value="Added jobs on sidebar. Jobs and answers showing using tabs on jobs.html.twig. Pagination needed." />
     <MESSAGE value="Pagination almost done. UI fixes needed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Pagination almost done. UI fixes needed." />
+    <MESSAGE value="UI fixes." />
+    <MESSAGE value="Search on Jobs by title." />
+    <option name="LAST_COMMIT_MESSAGE" value="Search on Jobs by title." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -866,13 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -974,28 +940,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="133" column="26" lean-forward="false" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
-          <folding>
-            <marker date="1521729268644" expanded="true" signature="28141:28152" ph="..." />
-            <marker date="1521729268644" expanded="true" signature="28202:28212" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/employee.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d2645e9-685e-4898-a236-48dda3c2d694/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="64" lean-forward="false" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -1072,15 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="188" column="4" lean-forward="false" selection-start-line="188" selection-start-column="4" selection-end-line="189" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/job/job.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="105" column="14" lean-forward="false" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,64 +1027,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/job/job.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="134" column="12" lean-forward="false" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/user.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="47" column="50" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="47" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1022">
+          <caret line="496" column="53" lean-forward="false" selection-start-line="496" selection-start-column="53" selection-end-line="496" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d2645e9-685e-4898-a236-48dda3c2d694/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="354" column="34" lean-forward="false" selection-start-line="354" selection-start-column="34" selection-end-line="354" selection-end-column="34" />
+        <state relative-caret-position="203">
+          <caret line="368" column="55" lean-forward="false" selection-start-line="368" selection-start-column="55" selection-end-line="368" selection-end-column="55" />
           <folding>
-            <marker date="1522087408498" expanded="true" signature="672:732" ph="SELECT COUNT... user" />
-            <marker date="1522087408498" expanded="true" signature="894:956" ph="SELECT COUNT... job" />
-            <marker date="1522087408498" expanded="true" signature="1115:1228" ph="SELECT COUNT... job" />
-            <marker date="1522087408498" expanded="true" signature="1393:1512" ph="SELECT COUNT... answer" />
-            <marker date="1522087408498" expanded="true" signature="1823:1917" ph="SELECT COUNT... job" />
-            <marker date="1522087408498" expanded="true" signature="2155:2253" ph="SELECT COUNT... answer" />
-            <marker date="1522087408498" expanded="true" signature="2533:2691" ph="SELECT COUNT... job" />
-            <marker date="1522087408498" expanded="true" signature="2878:3035" ph="SELECT COUNT... job" />
-            <marker date="1522087408498" expanded="true" signature="3217:3283" ph="SELECT COUNT... job" />
-            <marker date="1522087408498" expanded="true" signature="3457:3477" ph="SELECT count... job" />
-            <marker date="1522087408498" expanded="true" signature="3457:4374" ph="SELECT count... job" />
-            <marker date="1522087408498" expanded="true" signature="3457:4375" ph="SELECT count... job" />
-            <marker date="1522087408498" expanded="true" signature="3554:3834" ph="SELECT count... job" />
-            <marker date="1522087408498" expanded="true" signature="4573:4738" ph="SELECT count... user" />
-            <marker date="1522087408498" expanded="true" signature="4573:4739" ph="SELECT count... user" />
-            <marker date="1522087408498" expanded="true" signature="6551:6588" ph="select * fro... user" />
-            <marker date="1522087408498" expanded="true" signature="6724:6763" ph="SELECT * FRO... job" />
-            <marker date="1522087408498" expanded="true" signature="10267:10294" ph="DELETE FROM job... " />
-            <marker date="1522087408498" expanded="true" signature="10677:10707" ph="select * fro... user" />
-            <marker date="1522087408498" expanded="true" signature="11117:11160" ph="SELECT * FRO... notification" />
-            <marker date="1522087408498" expanded="true" signature="11117:11195" ph="SELECT * FRO... notification" />
-            <marker date="1522087408498" expanded="true" signature="11561:11956" ph="SELECT * FRO... job" />
-            <marker date="1522087408498" expanded="true" signature="11561:11985" ph="SELECT job.i... job" />
+            <marker date="1522170405736" expanded="true" signature="672:732" ph="SELECT COUNT... user" />
+            <marker date="1522170405736" expanded="true" signature="894:956" ph="SELECT COUNT... job" />
+            <marker date="1522170405736" expanded="true" signature="1115:1228" ph="SELECT COUNT... job" />
+            <marker date="1522170405736" expanded="true" signature="1393:1512" ph="SELECT COUNT... answer" />
+            <marker date="1522170405736" expanded="true" signature="1823:1917" ph="SELECT COUNT... job" />
+            <marker date="1522170405736" expanded="true" signature="2155:2253" ph="SELECT COUNT... answer" />
+            <marker date="1522170405736" expanded="true" signature="2533:2691" ph="SELECT COUNT... job" />
+            <marker date="1522170405736" expanded="true" signature="2878:3035" ph="SELECT COUNT... job" />
+            <marker date="1522170405736" expanded="true" signature="3217:3283" ph="SELECT COUNT... job" />
+            <marker date="1522170405736" expanded="true" signature="3457:3477" ph="SELECT count... job" />
+            <marker date="1522170405736" expanded="true" signature="3457:4374" ph="SELECT count... job" />
+            <marker date="1522170405736" expanded="true" signature="3457:4375" ph="SELECT count... job" />
+            <marker date="1522170405736" expanded="true" signature="3554:3834" ph="SELECT count... job" />
+            <marker date="1522170405736" expanded="true" signature="4573:4738" ph="SELECT count... user" />
+            <marker date="1522170405736" expanded="true" signature="4573:4739" ph="SELECT count... user" />
+            <marker date="1522170405736" expanded="true" signature="6551:6588" ph="select * fro... user" />
+            <marker date="1522170405736" expanded="true" signature="6724:6763" ph="SELECT * FRO... job" />
+            <marker date="1522170405736" expanded="true" signature="10267:10294" ph="DELETE FROM job... " />
+            <marker date="1522170405736" expanded="true" signature="10677:10707" ph="select * fro... user" />
+            <marker date="1522170405736" expanded="true" signature="11117:11160" ph="SELECT * FRO... notification" />
+            <marker date="1522170405736" expanded="true" signature="11117:11195" ph="SELECT * FRO... notification" />
+            <marker date="1522170405736" expanded="true" signature="11561:11956" ph="SELECT * FRO... job" />
+            <marker date="1522170405736" expanded="true" signature="11561:11985" ph="SELECT job.i... job" />
+            <marker date="1522170405736" expanded="true" signature="12459:12951" ph="SELECT job.i... job" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/maps.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="133" column="26" lean-forward="false" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <marker date="1521729268644" expanded="true" signature="28141:28152" ph="..." />
+            <marker date="1521729268644" expanded="true" signature="28202:28212" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="96" column="84" lean-forward="false" selection-start-line="96" selection-start-column="83" selection-end-line="96" selection-end-column="84" />
+        <state relative-caret-position="-1426">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#page#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1522171451728" expanded="true" signature="21671:21730" ph="..." />
           </folding>
         </state>
       </provider>

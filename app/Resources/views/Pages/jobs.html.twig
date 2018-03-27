@@ -37,8 +37,15 @@
 
                     <li>
                         <a class="search-btn">
+                            {#<div class="form-group">#}
+                                <input type="text" name="searchJob" class="form-control" id="my-search" placeholder="Search Job">
+                            {#</div>#}
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
                             <i class="fa fa-search"></i>
-                            <p class="hidden-lg hidden-md">Search</p>
                         </a>
                     </li>
                 </ul>
@@ -73,7 +80,7 @@
 
 
 {% block content %}
-    {{ dump() }}
+    {#{{ dump() }}#}
 
 
     <div class="content">
@@ -84,7 +91,6 @@
                     <div id="easyPaginate">
 
                         {% for job in jobs %}
-
 
                             <page>
                             <div class="card">
@@ -101,11 +107,11 @@
                                 </div>
                                 <div class="content card-body">
 
-                                    <div class="tab-content" style="height: 450px">
+                                    <div class="tab-content" style="height: 380px">
                                         <div id="job{{ job.job_id }}" class="tab-pane fade in">
                                             <div class="job-wrapper">
                                                 <div class="job-img">
-                                                    <img class="img-job" height="420" width="327" src="{{ asset('assets/img/job_images/job-photo.png') }}">
+                                                    <img class="img-job" height="350" width="327" src="{{ asset('assets/img/job_images/job-photo.png') }}">
                                                     <div class="img-txt-center">
                                                         {{ job.description }}
                                                     </div>
@@ -144,14 +150,32 @@
                                             </div>
                                         </div>
                                         <div id="answer{{ job.job_id }}" class="tab-pane fade" style="height: 200px">
-                                            <h3>
-                                                {% if job.answer_id is not null %}
-                                                    <h3>{{ job.response }}</h3>
-                                                    <p>{{ job.answered_at }}</p>
-                                                {% else %}
-                                                    <h3>No answer</h3>
-                                                {% endif %}
-                                            </h3>
+                                            {% if job.answer_id is not null %}
+                                                <div class="job-wrapper">
+                                                    <div class="job-img">
+                                                        <img class="img-job" height="350" width="327" src="{{ asset('assets/img/job_images/answer-photo.jpg') }}">
+                                                        <div class="img-txt-center">
+                                                            {{ job.description }}
+                                                        </div>
+                                                    </div>
+                                                    <div class="job-info">
+                                                        <div class="job-text">
+                                                            <h1 class="job-h1 text-center">{{ job.title }}</h1>
+                                                            <h2 class="job-h2 text-center">by {{ job.name }} {{ job.surname }}</h2>
+                                                            <p class="job-p"><strong>Response:</strong>
+                                                                {{ job.response }}
+                                                            </p>
+                                                            <p class="job-p"><strong>Answered At:</strong>
+                                                                {{ job.answered_at }}
+                                                            </p>
+                                                            <p class="job-p"><strong>Reward:</strong> ${{ job.reward }}</p>
+                                                            <p class="job-p"><strong>Deadline:</strong> {{ job.deadline }}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            {% else %}
+                                                <h3>No answer</h3>
+                                            {% endif %}
                                         </div>
                                     </div>
                                     <div class="footer">
@@ -224,7 +248,7 @@
         var test = {{ jobs|json_encode|raw }};
 
         test.forEach(function (value) {
-            console.log(value);
+            // console.log(value);
         });
 
 
@@ -248,7 +272,175 @@
                 prevButtonText: 'Prev'
             });
 
+
+            // Search Jobs
+
+            $("#my-search").keyup(function() {
+
+                var jobTitle = $(this).val();
+
+                delay(function(){
+
+                    // alert(jobTitle);
+
+                    if (jobTitle !== '') {
+                        $.ajax({
+                            type: 'POST',
+                            url: '/search/jobs',
+                            data: {
+                                'job-title' : jobTitle
+                            },
+                            success: function (result) {
+
+                                console.log(JSON.parse(result));
+
+                                var array = JSON.parse(result);
+
+                                $('#easyPaginate').html('');
+
+                                array.forEach(function (element) {
+
+                                    var answer = "";
+                                    var priority = "";
+                                    var difficulty = "";
+
+                                    if(element.priority === "0"){
+                                        priority = "Low";
+                                    } else if(element.priority === "1"){
+                                        priority = "Medium";
+                                    } else {
+                                        priority = "High";
+                                    }
+
+                                    if(element.job_diff === "0"){
+                                        difficulty = "Easy";
+                                    } else if(element.job_diff === "1"){
+                                        difficulty = "Challenging";
+                                    } else if(element.job_diff === "2"){
+                                        difficulty = "Hard";
+                                    } else {
+                                        difficulty = "Extreme";
+                                    }
+
+                                    if(element.answer_id != null){
+
+                                        answer = "<div class='job-wrapper'>\n" +
+"                                                    <div class='job-img'>\n" +
+"                                                        <img class='img-job' height='350' width='327' src='{{ asset('assets/img/job_images/answer-photo.jpg') }}'>\n" +
+"                                                        <div class='img-txt-center'>\n" +
+"                                                            " + element.description + "\n" +
+"                                                        </div>\n" +
+"                                                    </div>\n" +
+"                                                    <div class='job-info'>\n" +
+"                                                        <div class='job-text'>\n" +
+"                                                            <h1 class='job-h1 text-center'>" + element.title + "</h1>\n" +
+"                                                            <h2 class='job-h2 text-center'>by " + element.name + " " + element.surname + "</h2>\n" +
+"                                                            <p class='job-p'><strong>Response:</strong>\n" +
+"                                                                " + element.response + "\n" +
+"                                                            </p>\n" +
+"                                                            <p class='job-p'><strong>Answered At:</strong>\n" +
+"                                                                " + element.answered_at + "\n" +
+"                                                            </p>\n" +
+"                                                            <p class='job-p'><strong>Reward:</strong> $" + element.reward + "</p>\n" +
+"                                                            <p class='job-p'><strong>Deadline:</strong> " + element.deadline + "</p>\n" +
+"                                                        </div>\n" +
+"                                                    </div>\n" +
+"                                                </div>";
+
+                                    } else {
+                                        answer = "<h3>No answer</h3>";
+                                    }
+
+
+
+                                    $('#easyPaginate').append("<page>\n" +
+                                "                            <div class='card'>\n" +
+                                "                                <div class='card-header'>\n" +
+                                "                                    <ul class='nav nav-tabs text-center'>\n" +
+                                "                                        <li class='col-md-3 nav-item'>\n" +
+                                "                                            <a class='nav-link active-tab' data-toggle='tab' href='#job" + element.job_id + "'>Job" + element.job_id + "</a>\n" +
+                                "                                        </li>\n" +
+                                "                                        <li class='col-md-3 nav-item'>\n" +
+                                "                                            <a class='nav-link' data-toggle='tab' href='#answer" + element.job_id + "'>Answer</a>\n" +
+                                "                                        </li>\n" +
+                                "                                    </ul>\n" +
+                                "\n" +
+                                "                                </div>\n" +
+                                "                                <div class='content card-body'>\n" +
+                                "\n" +
+                                "                                    <div class='tab-content' style='height: 380px'>\n" +
+                                "                                        <div id='job" + element.job_id + "' class='tab-pane fade in'>\n" +
+                                "                                            <div class='job-wrapper'>\n" +
+                                "                                                <div class='job-img'>\n" +
+                                "                                                    <img class='img-job' height='350' width='327' src='{{ asset('assets/img/job_images/job-photo.png') }}'>\n" +
+                                "                                                    <div class='img-txt-center'>\n" +
+                                "                                                        " + element.description + "\n" +
+                                "                                                    </div>\n" +
+                                "                                                </div>\n" +
+                                "                                                <div class='job-info'>\n" +
+                                "                                                    <div class='job-text'>\n" +
+                                "                                                        <h1 class='job-h1 text-center'>" + element.title + "</h1>\n" +
+                                "                                                        <h2 class='job-h2 text-center'>by " + element.name + " " + element.surname + "</h2>\n" +
+                                "                                                        <p class='job-p'><strong>Priority:</strong>\n" + priority +
+                                "                                                        </p>\n" +
+                                "                                                        <p class='job-p'><strong>Difficulty:</strong>\n" + difficulty +
+                                "                                                        </p>\n" +
+                                "                                                        <p class='job-p'><strong>Reward:</strong> $" + element.reward + "</p>\n" +
+                                "                                                        <p class='job-p'><strong>Deadline:</strong> " + element.deadline + "</p>\n" +
+                                "                                                    </div>\n" +
+                                "                                                    <div class='job-price-btn' style='display: flex; justify-content: center; align-items: center'>\n" +
+                                "                                                        <button class='job-btn btn-danger' type='button' data-toggle='modal' id='delete-" + element.job_id + "' data-target='#delete-modal'>Delete</button>\n" +
+                                "                                                    </div>\n" +
+                                "                                                </div>\n" +
+                                "                                            </div>\n" +
+                                "                                        </div>\n" +
+                                "                                        <div id='answer" + element.job_id + "' class='tab-pane fade' style='height: 200px'>\n" +
+                                                                            answer +
+                                "                                        </div>" +
+                                "                                    </div>\n" +
+                                "                                    <div class='footer'>\n" +
+                                "                                        <hr>\n" +
+                                "                                        <div class='stats'>\n" +
+                                "                                            <i class='ti-check'></i> Data information certified\n" +
+                                "                                        </div>\n" +
+                                "                                    </div>\n" +
+                                "                                </div>\n" +
+                                "                            </div>\n" +
+                                "                            </page>");
+
+                                    $('.active-tab').tab('show');
+
+                                });
+
+
+                                $('.easyPaginateNav').remove();
+
+                                $('#easyPaginate').easyPaginate({
+                                    paginateElement: 'page',
+                                    elementsPerPage: 5,
+                                    effect: 'climb',
+                                    firstButtonText: 'First',
+                                    lastButtonText: 'Last',
+                                    nextButtonText: 'Next',
+                                    prevButtonText: 'Prev'
+                                });
+                            }
+                        });
+                    }
+
+                }, 1000);
+            });
         });
+
+
+        var delay = (function(){
+            var timer = 0;
+            return function(callback, ms){
+                clearTimeout (timer);
+                timer = setTimeout(callback, ms);
+            };
+        })();
+
     </script>
 
 {% endblock %}

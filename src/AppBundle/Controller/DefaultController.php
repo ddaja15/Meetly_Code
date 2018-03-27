@@ -360,5 +360,29 @@ class DefaultController extends Controller
         ]);
     }
 
+    /**
+     * @Route("/search/jobs",name="searchJobs")
+     */
+    public function searchJobsAction(Request $request)
+    {
 
+        $searching = $request->request->get('job-title');
+
+        $em = $this->getDoctrine()->getManager();
+
+        $sql = "SELECT job.id as job_id, user_id, title, deadline, description, form, lat, lng,
+                    deadline, priority, reward, job_diff, job.created_at, job.updated_at, is_answered,
+                    a.id as answer_id, a.response, answered_at, u.name, u.surname
+                FROM job
+                JOIN user u ON job.user_id = u.id
+                LEFT JOIN answer a ON job.id = a.job_id
+                WHERE job.title LIKE '%$searching%'
+                ORDER BY job.created_at DESC";
+
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $jobs = $stmt->fetchAll();
+
+        return new Response(json_encode($jobs));
+    }
 }
