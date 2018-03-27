@@ -383,7 +383,7 @@ function getFormJson(section, sectionID) {
             var select = $(this).find("select").find("option:selected").val();
             console.log(select);
 
-            jsonForm += "{'" + questionName + "':[{'content':'" + content + "','type':'" + select + "'}]},";
+            jsonForm += "{'" + questionName + "':[{'content':'" + content + "','type':'" + select + "','answer':''}]},";
 
             currentQuestion++;
         });
