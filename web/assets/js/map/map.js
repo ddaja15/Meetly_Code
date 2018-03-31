@@ -372,7 +372,7 @@ function getFormJson(section, sectionID) {
         var sectionNumber = this.id[this.id.length - 1];
         var sectionName = $("#sectionName" + sectionNumber).val();
 
-        jsonForm += "{ '" + sectionName + "' : [";
+        jsonForm += "{'name':'" + sectionName + "', 'data':[";
 
         var currentQuestion = 0;
 
@@ -383,18 +383,20 @@ function getFormJson(section, sectionID) {
             var select = $(this).find("select").find("option:selected").val();
             console.log(select);
 
-            jsonForm += "'" + questionName + "' : ['content':'" + content + "','type':'" + select + "'],";
+            jsonForm += "{'" + questionName + "':[{'content':'" + content + "','type':'" + select + "','answer':''}]},";
 
             currentQuestion++;
         });
         currentQuestion = 0;
 
-        jsonForm += "] } ,";
+        jsonForm += "]},";
 
     });
 
     jsonForm += "]";
-    return jsonForm;
+
+    var correctForm = jsonForm.replace(/'/g, '"');
+    return correctForm.split(",]").join("]");
 }
 
 

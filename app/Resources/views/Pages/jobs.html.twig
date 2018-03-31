@@ -12,6 +12,11 @@
         /*#easyPaginate {width:300px;}*/
         .easyPaginateNav a {padding:1px;}
         .easyPaginateNav a.current {font-weight:bold;text-decoration:underline;}
+        .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+            color: #fff !important;
+            background-color: #d9534f !important;
+        }
+
     </style>
 {% endblock %}
 
@@ -80,7 +85,7 @@
 
 
 {% block content %}
-    {#{{ dump() }}#}
+    {{ dump() }}
 
 
     <div class="content">
@@ -95,12 +100,13 @@
                             <page>
                             <div class="card">
                                 <div class="card-header">
-                                    <ul class="nav nav-tabs text-center">
+                                    <ul class="nav nav-pills nav-justified">
+                                        {#nav nav-tabs text-centered#}
                                         <li class="col-md-3 nav-item">
                                             <a class="nav-link active-tab" data-toggle="tab" href="#job{{ job.job_id }}">Job{{ job.job_id }}</a>
                                         </li>
                                         <li class="col-md-3 nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#answer{{ job.job_id }}">Answer</a>
+                                            <a class="nav-link"  data-toggle="tab" href="#answer{{ job.job_id }}">Answer</a>
                                         </li>
                                     </ul>
 
@@ -116,11 +122,11 @@
                                                         {{ job.description }}
                                                     </div>
                                                 </div>
-                                                <div class="job-info">
+                                                <div class="job-info" id="style2" style="overflow: scroll;overflow-x: hidden">
                                                     <div class="job-text">
                                                         <h1 class="job-h1 text-center">{{ job.title }}</h1>
                                                         <h2 class="job-h2 text-center">by {{ job.name }} {{ job.surname }}</h2>
-                                                        <p class="job-p"><strong>Priority:</strong>
+                                                        <p class="job-p text-center" style="border-bottom: 1px solid #cccccc"><strong>Priority:</strong>
                                                             {% if job.priority == 0 %}
                                                                 Low
                                                             {% elseif job.priority == 1 %}
@@ -129,7 +135,7 @@
                                                                 High
                                                             {% endif %}
                                                         </p>
-                                                        <p class="job-p"><strong>Difficulty:</strong>
+                                                        <p class="job-p text-center" style="border-bottom: 1px solid #cccccc"><strong>Difficulty:</strong>
                                                             {% if job.job_diff == 0 %}
                                                                 Easy
                                                             {% elseif job.job_diff == 1 %}
@@ -140,11 +146,11 @@
                                                                 Extreme
                                                             {% endif %}
                                                         </p>
-                                                        <p class="job-p"><strong>Reward:</strong> ${{ job.reward }}</p>
-                                                        <p class="job-p"><strong>Deadline:</strong> {{ job.deadline }}</p>
+                                                        <p class="job-p text-center" style="border-bottom: 1px solid #cccccc"><strong>Reward:</strong> ${{ job.reward }}</p>
+                                                        <p class="job-p text-center" style="border-bottom: 1px solid #cccccc"><strong>Deadline:</strong> {{ job.deadline }}</p>
                                                     </div>
-                                                    <div class="job-price-btn" style="display: flex; justify-content: center; align-items: center">
-                                                        <button class="job-btn btn-danger" type="button" data-toggle="modal" id="delete-{{ job.job_id }}" data-target="#delete-modal">Delete</button>
+                                                    <div class="job-price-btn" style="display: flex; justify-content: center; align-items: center;margin-top:5px">
+                                                        <button class="job-btn btn-danger delete-job-btn" onclick="appendToModal({{ job.job_id }}, {{ job.answer_id }})" type="button" data-toggle="modal" id="delete-{{ job.job_id }}" data-target="#delete-modal" style="margin:0">Delete</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -158,11 +164,11 @@
                                                             {{ job.description }}
                                                         </div>
                                                     </div>
-                                                    <div class="job-info" style="overflow: scroll; overflow-x: hidden">
+                                                    <div class="job-info" id="style2" style="overflow: scroll; overflow-x: hidden">
                                                         <div class="job-text">
                                                             <h1 class="job-h1 text-center">{{ job.title }}</h1>
                                                             <h2 class="job-h2 text-center">by {{ job.name }} {{ job.surname }}</h2>
-                                                            <h1 class='job-h1 text-center' id='response'>Response</h1><br>
+                                                            {#<h1 class='job-h1 text-center' id='response'>Response</h1><br>#}
                                                             <p class='job-p' id="response-questions"></p>
                                                                 <script>
                                                                     var show_response = "";
@@ -171,7 +177,7 @@
                                                                     Object.keys(map).forEach(function (key) {
 
                                                                         var value = map[key];
-                                                                        show_response += "<strong>" + key + "? \t </strong>" + value + "<br>";
+                                                                        show_response += "<p style='border-bottom:1px solid #cccccc;margin:0' class='job-b text-center'><strong>" + key + "? \t </strong>" + value + "</p><br>";
 
                                                                     });
 
@@ -179,21 +185,21 @@
                                                                     $('#response-questions').append(show_response);
 
                                                                 </script>
-                                                            <p class="job-p" style="margin-bottom: 15px;"><strong>Answered At:</strong>
+                                                            <p class='job-p text-center' style='margin-bottom: 15px;border-bottom:1px solid #cccccc'><strong>Answered At:</strong>
                                                                 {{ job.answered_at }}
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             {% else %}
-                                                <h3>No answer</h3>
+                                                <h3 style='position:absolute;top:40%'>Sorry! This job has not been answered yet!</h3>
                                             {% endif %}
                                         </div>
                                     </div>
                                     <div class="footer">
                                         <hr>
                                         <div class="stats">
-                                            <i class="ti-check"></i> Data information certified
+                                            <i class="ti-check"></i> Job Information
                                         </div>
                                     </div>
                                 </div>
@@ -237,7 +243,7 @@
                     </div>
                     <div class="modal-footer">
                         <div class="col-md-1"></div>
-                        <button class="btn btn-danger col-md-5">Yes</button>
+                        <button class="btn btn-danger col-md-5" onclick="deleteJob()">Yes</button>
                         <button class="btn btn col-md-5 search-btn-modal" data-dismiss="modal" data-toggle="tab">No</button>
 
                         <div class="col-md-1"></div>
@@ -340,7 +346,7 @@
                                     Object.keys(map).forEach(function (key) {
 
                                         var value = map[key];
-                                        show_response += "<strong>" + key + "? \t </strong>" + value + "<br>";
+                                        show_response += "<p style='border-bottom:1px solid #cccccc;margin:0' class='job-b text-center'><strong>" + key + "? \t </strong>" + value + "</p><br>";
 
                                     });
 
@@ -354,15 +360,14 @@
 "                                                            " + element.description + "\n" +
 "                                                        </div>\n" +
 "                                                    </div>\n" +
-"                                                    <div class='job-info' style='overflow:scroll; overflow-x:hidden;'>\n" +
+"                                                    <div class='job-info' id='style2' style='overflow:scroll; overflow-x:hidden;'>\n" +
 "                                                        <div class='job-text'>\n" +
 "                                                            <h1 class='job-h1 text-center'>" + element.title + "</h1>\n" +
 "                                                            <h2 class='job-h2 text-center'>by " + element.name + " " + element.surname + "</h2>\n" +
-"                                                            <h1 class='job-h1 text-center' id='response'>Response</h1><br>" +
-"                                                            <p class='job-p'>" +
+"                                                            <p class='job-p text-center'>" +
 "                                                                " + show_response + "\n" +
 "                                                            </p>\n" +
-"                                                            <p class='job-p' style='margin-bottom: 15px;'><strong>Answered At:</strong>\n" +
+"                                                            <p class='job-p text-center' style='margin-bottom: 15px;border-bottom:1px solid #cccccc'><strong>Answered At:</strong>\n" +
 "                                                                " + element.answered_at + "\n" +
 "                                                            </p>\n" +
 "                                                        </div>\n" +
@@ -370,7 +375,7 @@
 "                                                </div>";
 
                                     } else {
-                                        answer = "<h3>No answer</h3>";
+                                        answer = "<h3 style='position:absolute;top:40%'>Sorry! This job has not been answered yet!</h3>";
                                     }
 
 
@@ -378,7 +383,7 @@
                                     $('#easyPaginate').append("<page>\n" +
                                 "                            <div class='card'>\n" +
                                 "                                <div class='card-header'>\n" +
-                                "                                    <ul class='nav nav-tabs text-center'>\n" +
+                                "                                    <ul class='nav nav-pills nav-justified'>\n" +
                                 "                                        <li class='col-md-3 nav-item'>\n" +
                                 "                                            <a class='nav-link active-tab' data-toggle='tab' href='#job" + element.job_id + "'>Job" + element.job_id + "</a>\n" +
                                 "                                        </li>\n" +
@@ -399,19 +404,19 @@
                                 "                                                        " + element.description + "\n" +
                                 "                                                    </div>\n" +
                                 "                                                </div>\n" +
-                                "                                                <div class='job-info' style='overflow:scroll; overflow-x:hidden; overflow-y: hidden;'>\n" +
+                                "                                                <div class='job-info' id='style2' style='overflow:scroll; overflow-x:hidden;'>\n" +
                                 "                                                    <div class='job-text'>\n" +
                                 "                                                        <h1 class='job-h1 text-center'>" + element.title + "</h1>\n" +
                                 "                                                        <h2 class='job-h2 text-center'>by " + element.name + " " + element.surname + "</h2>\n" +
-                                "                                                        <p class='job-p'><strong>Priority:</strong>\n" + priority +
+                                "                                                        <p class='job-p text-center' style='border-bottom: 1px solid #cccccc'><strong>Priority:</strong>\n" + priority +
                                 "                                                        </p>\n" +
-                                "                                                        <p class='job-p'><strong>Difficulty:</strong>\n" + difficulty +
+                                "                                                        <p class='job-p text-center' style='border-bottom: 1px solid #cccccc'><strong>Difficulty:</strong>\n" + difficulty +
                                 "                                                        </p>\n" +
-                                "                                                        <p class='job-p'><strong>Reward:</strong> $" + element.reward + "</p>\n" +
-                                "                                                        <p class='job-p'><strong>Deadline:</strong> " + element.deadline + "</p>\n" +
+                                "                                                        <p class='job-p text-center' style='border-bottom: 1px solid #cccccc'><strong>Reward:</strong> $" + element.reward + "</p>\n" +
+                                "                                                        <p class='job-p text-center' style='border-bottom: 1px solid #cccccc'><strong>Deadline:</strong> " + element.deadline + "</p>\n" +
                                 "                                                    </div>\n" +
-                                "                                                    <div class='job-price-btn' style='display: flex; justify-content: center; align-items: center'>\n" +
-                                "                                                        <button class='job-btn btn-danger' type='button' data-toggle='modal' id='delete-" + element.job_id + "' data-target='#delete-modal'>Delete</button>\n" +
+                                "                                                    <div class='job-price-btn' style='display: flex; justify-content: center; align-items: center;margin-top:5px'>\n" +
+                                "                                                        <button class='job-btn btn-danger delete-job-btn' onclick='appendToModal(" + element.job_id + "," + element.answer_id + ")' type='button' data-toggle='modal' id='delete-" + element.job_id + "' data-target='#delete-modal' style='margin:0'>Delete</button>\n" +
                                 "                                                    </div>\n" +
                                 "                                                </div>\n" +
                                 "                                            </div>\n" +
@@ -423,7 +428,7 @@
                                 "                                    <div class='footer'>\n" +
                                 "                                        <hr>\n" +
                                 "                                        <div class='stats'>\n" +
-                                "                                            <i class='ti-check'></i> Data information certified\n" +
+                                "                                            <i class='ti-check'></i> Job Information\n" +
                                 "                                        </div>\n" +
                                 "                                    </div>\n" +
                                 "                                </div>\n" +
@@ -462,6 +467,38 @@
                 timer = setTimeout(callback, ms);
             };
         })();
+
+
+        // Delete Job
+
+        function appendToModal(jobId, answerId) {
+            $('#delete-job-id').remove();
+            $('#delete-answer-id').remove();
+            $('#myWizard').append('<p id="delete-job-id" style="display: none">' + jobId + '</p>');
+            $('#myWizard').append('<p id="delete-answer-id" style="display: none">' + answerId + '</p>');
+        }
+        
+        function deleteJob() {
+
+
+            var jobId = $('#delete-job-id').html();
+            var answerId = $('#delete-answer-id').html();
+            // alert(jobId);
+            // alert(answerId);
+
+            $.ajax({
+                type: 'POST',
+                url: '/delete/jobs',
+                data: {
+                    'job-id': jobId,
+                    'answer-id': answerId
+                },
+                success: function (result) {
+                    location.reload();
+                }
+            });
+        }
+
 
     </script>
 
