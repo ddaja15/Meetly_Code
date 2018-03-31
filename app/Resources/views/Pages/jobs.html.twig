@@ -150,7 +150,7 @@
                                                         <p class="job-p text-center" style="border-bottom: 1px solid #cccccc"><strong>Deadline:</strong> {{ job.deadline }}</p>
                                                     </div>
                                                     <div class="job-price-btn" style="display: flex; justify-content: center; align-items: center;margin-top:5px">
-                                                        <button class="job-btn btn-danger" type="button" data-toggle="modal" id="delete-{{ job.job_id }}" data-target="#delete-modal" style="margin:0">Delete</button>
+                                                        <button class="job-btn btn-danger delete-job-btn" onclick="appendToModal({{ job.job_id }}, {{ job.answer_id }})" type="button" data-toggle="modal" id="delete-{{ job.job_id }}" data-target="#delete-modal" style="margin:0">Delete</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -178,7 +178,7 @@
                                                                     Object.keys(map).forEach(function (key) {
 
                                                                         var value = map[key];
-                                                                        show_response += "<strong>" + key + "? \t </strong>" + value + "<br>";
+                                                                        show_response += "<p style='border-bottom:1px solid #cccccc;margin:0' class='job-b text-center'><strong>" + key + "? \t </strong>" + value + "</p><br>";
 
                                                                     });
 
@@ -186,7 +186,7 @@
                                                                     $('#response-questions').append(show_response);
 
                                                                 </script>
-                                                            <p class="job-p" style="margin-bottom: 15px;"><strong>Answered At:</strong>
+                                                            <p class='job-p text-center' style='margin-bottom: 15px;border-bottom:1px solid #cccccc'><strong>Answered At:</strong>
                                                                 {{ job.answered_at }}
                                                             </p>
                                                         </div>
@@ -244,7 +244,7 @@
                     </div>
                     <div class="modal-footer">
                         <div class="col-md-1"></div>
-                        <button class="btn btn-danger col-md-5">Yes</button>
+                        <button class="btn btn-danger col-md-5" onclick="deleteJob()">Yes</button>
                         <button class="btn btn col-md-5 search-btn-modal" data-dismiss="modal" data-toggle="tab">No</button>
 
                         <div class="col-md-1"></div>
@@ -418,7 +418,7 @@
                                 "                                                        <p class='job-p text-center' style='border-bottom: 1px solid #cccccc'><strong>Deadline:</strong> " + element.deadline + "</p>\n" +
                                 "                                                    </div>\n" +
                                 "                                                    <div class='job-price-btn' style='display: flex; justify-content: center; align-items: center;margin-top:5px'>\n" +
-                                "                                                        <button class='job-btn btn-danger' type='button' data-toggle='modal' id='delete-" + element.job_id + "' data-target='#delete-modal' style='margin:0'>Delete</button>\n" +
+                                "                                                        <button class='job-btn btn-danger delete-job-btn' onclick='appendToModal(" + element.job_id + "," + element.answer_id + ")' type='button' data-toggle='modal' id='delete-" + element.job_id + "' data-target='#delete-modal' style='margin:0'>Delete</button>\n" +
                                 "                                                    </div>\n" +
                                 "                                                </div>\n" +
                                 "                                            </div>\n" +
@@ -469,6 +469,38 @@
                 timer = setTimeout(callback, ms);
             };
         })();
+
+
+        // Delete Job
+
+        function appendToModal(jobId, answerId) {
+            $('#delete-job-id').remove();
+            $('#delete-answer-id').remove();
+            $('#myWizard').append('<p id="delete-job-id" style="display: none">' + jobId + '</p>');
+            $('#myWizard').append('<p id="delete-answer-id" style="display: none">' + answerId + '</p>');
+        }
+
+        function deleteJob() {
+
+
+            var jobId = $('#delete-job-id').html();
+            var answerId = $('#delete-answer-id').html();
+            // alert(jobId);
+            // alert(answerId);
+
+            $.ajax({
+                type: 'POST',
+                url: '/delete/jobs',
+                data: {
+                    'job-id': jobId,
+                    'answer-id': answerId
+                },
+                success: function (result) {
+                    location.reload();
+                }
+            });
+        }
+
 
     </script>
 

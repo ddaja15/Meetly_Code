@@ -385,4 +385,32 @@ class DefaultController extends Controller
 
         return new Response(json_encode($jobs));
     }
+
+
+    /**
+     * @Route("/delete/jobs",name="deleteJobs")
+     */
+    public function deleteJobsAction(Request $request)
+    {
+
+        $job_id = $request->request->get('job-id');
+
+        $em = $this->getDoctrine()->getManager();
+        $sql = "DELETE FROM job WHERE job.id = $job_id";
+
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+
+        $answer_id = $request->request->get('answer_id');
+
+        if ($answer_id != null) {
+            $sql = "DELETE FROM answer WHERE answer.id = $answer_id AND answer.job_id = $job_id";
+            $stmt = $em->getConnection()->prepare($sql);
+            $stmt->execute();
+        }
+
+
+        return new Response("yes");
+    }
+
 }
