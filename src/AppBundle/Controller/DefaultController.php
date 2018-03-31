@@ -357,6 +357,7 @@ class DefaultController extends Controller
 
         return $this->render('Pages/jobs.html.twig', [
             'jobs' => $jobs,
+			'response' => $jobs[0]['response']
         ]);
     }
 

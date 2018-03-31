@@ -377,7 +377,8 @@ function getFormJson(section, sectionID) {
         var currentQuestion = 0;
 
         $('.question' + sectionNumber).map(function () {
-            var questionName = "question" + currentQuestion;
+            var questionName = "question";
+            //+ currentQuestion;
             var content = $(this).children()[0].value;
 
             var select = $(this).find("select").find("option:selected").val();

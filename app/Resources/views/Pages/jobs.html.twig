@@ -85,8 +85,12 @@
 
 
 {% block content %}
-    {#{{ dump() }}#}
+    {{ dump() }}
 
+	<script>
+	
+		
+	</script>
 
     <div class="content">
         <div class="container-fluid">
@@ -174,17 +178,24 @@
                                                                     var show_response = "";
 
 //                                                                  var map = {"Question 1" : 50, "Question2" : "yes", "Question23" : "yes", "Questio1n23" : "yes", "Questaion23" : "yes", "Questdion23" : "yes", "Ques123tion23" : "yes", "Question22" : "yes", "Questi1on2" : "yes"};
-                                                                    var map = {{ job.response }};
-                                                                    Object.keys(map).forEach(function (key) {
 
-                                                                        var value = map[key];
-                                                                        show_response += "<p style='border-bottom:1px solid #cccccc;margin:0' class='job-b text-center'><strong>" + key + "? \t </strong>" + value + "</p><br>";
+																	
+																	
+																	var response = '{{ response }}';
+																	var map = JSON.parse(response.replace(/&quot;/g, '"'));
+																	 
+																	console.log(map);
+																	
+                                                                    map.forEach(function (element) {
+																	
+                                                                        show_response += "<p style='border-bottom:1px solid #cccccc;margin:0' class='job-b text-center'><strong>" + element[0] + "? \t </strong>" + element[1] + "</p><br>";
 
                                                                     });
 
                                                                     // $('#response').html('');
-                                                                    $('#response-questions').append(show_response);
-
+                                                                    document.getElementById('response-questions').innerHTML = document.getElementById('response-questions').innerHTML + show_response;
+																	//append(show_response);
+																	console.log(show_response);
                                                                 </script>
                                                             <p class='job-p text-center' style='margin-bottom: 15px;border-bottom:1px solid #cccccc'><strong>Answered At:</strong>
                                                                 {{ job.answered_at }}
@@ -344,9 +355,10 @@
                                     var show_response = "";
 
 //                                    var map = {"Question 1" : 50, "Question2" : "yes", "Question23" : "yes", "Questio1n23" : "yes", "Questaion23" : "yes", "Questdion23" : "yes", "Ques123tion23" : "yes", "Question22" : "yes", "Questi1on2" : "yes"};
-                                    var map = element.response;
 
-                                    if(map !== null) {
+                                    if(element.response !== null) {
+									   var map = new Map(JSON.parse(element.response));
+
                                         Object.keys(map).forEach(function (key) {
 
                                             var value = map[key];
