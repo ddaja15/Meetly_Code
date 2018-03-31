@@ -45,16 +45,50 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="jobs.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="175" column="68" lean-forward="true" selection-start-line="175" selection-start-column="68" selection-end-line="175" selection-end-column="68" />
+            <state relative-caret-position="208">
+              <caret line="122" column="58" lean-forward="false" selection-start-line="122" selection-start-column="58" selection-end-line="122" selection-end-column="58" />
               <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-                <marker date="1522490203068" expanded="true" signature="17487:17527" ph="..." />
-                <marker date="1522490203068" expanded="true" signature="19778:19803" ph="..." />
+                <marker date="1522494505966" expanded="true" signature="10690:10730" ph="..." />
+                <marker date="1522494505966" expanded="true" signature="17780:17820" ph="..." />
+                <marker date="1522494505966" expanded="true" signature="20112:20137" ph="..." />
+                <marker date="1522494505966" expanded="true" signature="27964:27977" ph="..." />
+                <marker date="1522494505966" expanded="true" signature="28067:28080" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="383" column="34" lean-forward="false" selection-start-line="383" selection-start-column="34" selection-end-line="383" selection-end-column="34" />
+              <folding>
+                <marker date="1522493550665" expanded="true" signature="672:732" ph="SELECT COUNT... user" />
+                <marker date="1522493550665" expanded="true" signature="894:956" ph="SELECT COUNT... job" />
+                <marker date="1522493550665" expanded="true" signature="1115:1228" ph="SELECT COUNT... job" />
+                <marker date="1522493550665" expanded="true" signature="1393:1512" ph="SELECT COUNT... answer" />
+                <marker date="1522493550665" expanded="true" signature="1823:1917" ph="SELECT COUNT... job" />
+                <marker date="1522493550665" expanded="true" signature="2155:2253" ph="SELECT COUNT... answer" />
+                <marker date="1522493550665" expanded="true" signature="2533:2691" ph="SELECT COUNT... job" />
+                <marker date="1522493550665" expanded="true" signature="2878:3035" ph="SELECT COUNT... job" />
+                <marker date="1522493550665" expanded="true" signature="3217:3283" ph="SELECT COUNT... job" />
+                <marker date="1522493550665" expanded="true" signature="3457:4374" ph="SELECT count... job" />
+                <marker date="1522493550665" expanded="true" signature="3554:3834" ph="SELECT count... job" />
+                <marker date="1522493550665" expanded="true" signature="4573:4739" ph="SELECT count... user" />
+                <marker date="1522493550665" expanded="true" signature="6551:6588" ph="select * fro... user" />
+                <marker date="1522493550665" expanded="true" signature="6724:6763" ph="SELECT * FRO... job" />
+                <marker date="1522493550665" expanded="true" signature="10267:10294" ph="DELETE FROM " />
+                <marker date="1522493550665" expanded="true" signature="10677:10707" ph="select * fro... user" />
+                <marker date="1522493550665" expanded="true" signature="11117:11195" ph="SELECT * FRO... notification" />
+                <marker date="1522493550665" expanded="true" signature="11561:11985" ph="SELECT job.i... job" />
+                <marker date="1522493550665" expanded="true" signature="12459:12951" ph="SELECT job.i... job" />
+                <marker date="1522493550665" expanded="true" signature="13372:13403" ph="DELETE FROM " />
+                <marker date="1522493550665" expanded="true" signature="13607:13675" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -64,8 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ct-chart</find>
-      <find>durations</find>
       <find>passw</find>
       <find>pass</find>
       <find>findoneB</find>
@@ -94,6 +126,8 @@
       <find>response</find>
       <find>job.response</find>
       <find>response-ques</find>
+      <find>search</find>
+      <find>element</find>
     </findStrings>
     <replaceStrings>
       <replace>/paper-assets/</replace>
@@ -293,6 +327,60 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meetly" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -316,32 +404,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meetly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meetly" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -489,6 +551,8 @@
       <workItem from="1522180950819" duration="3964000" />
       <workItem from="1522231532363" duration="674000" />
       <workItem from="1522485468693" duration="1340000" />
+      <workItem from="1522493870830" duration="141000" />
+      <workItem from="1522494161358" duration="399000" />
     </task>
     <task id="LOCAL-00001" summary="You can now create jobs. No validation still">
       <created>1520779432267</created>
@@ -557,13 +621,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155420000" />
+    <option name="totallyTimeSpent" value="155960000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23903178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24659607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59703946" sideWeight="0.50907713" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19213313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -900,13 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="239" column="0" lean-forward="false" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/dashboard.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
@@ -928,14 +985,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="383" column="34" lean-forward="false" selection-start-line="383" selection-start-column="34" selection-end-line="383" selection-end-column="34" />
+          <folding>
+            <marker date="1522493550665" expanded="true" signature="672:732" ph="SELECT COUNT... user" />
+            <marker date="1522493550665" expanded="true" signature="894:956" ph="SELECT COUNT... job" />
+            <marker date="1522493550665" expanded="true" signature="1115:1228" ph="SELECT COUNT... job" />
+            <marker date="1522493550665" expanded="true" signature="1393:1512" ph="SELECT COUNT... answer" />
+            <marker date="1522493550665" expanded="true" signature="1823:1917" ph="SELECT COUNT... job" />
+            <marker date="1522493550665" expanded="true" signature="2155:2253" ph="SELECT COUNT... answer" />
+            <marker date="1522493550665" expanded="true" signature="2533:2691" ph="SELECT COUNT... job" />
+            <marker date="1522493550665" expanded="true" signature="2878:3035" ph="SELECT COUNT... job" />
+            <marker date="1522493550665" expanded="true" signature="3217:3283" ph="SELECT COUNT... job" />
+            <marker date="1522493550665" expanded="true" signature="3457:4374" ph="SELECT count... job" />
+            <marker date="1522493550665" expanded="true" signature="3554:3834" ph="SELECT count... job" />
+            <marker date="1522493550665" expanded="true" signature="4573:4739" ph="SELECT count... user" />
+            <marker date="1522493550665" expanded="true" signature="6551:6588" ph="select * fro... user" />
+            <marker date="1522493550665" expanded="true" signature="6724:6763" ph="SELECT * FRO... job" />
+            <marker date="1522493550665" expanded="true" signature="10267:10294" ph="DELETE FROM " />
+            <marker date="1522493550665" expanded="true" signature="10677:10707" ph="select * fro... user" />
+            <marker date="1522493550665" expanded="true" signature="11117:11195" ph="SELECT * FRO... notification" />
+            <marker date="1522493550665" expanded="true" signature="11561:11985" ph="SELECT job.i... job" />
+            <marker date="1522493550665" expanded="true" signature="12459:12951" ph="SELECT job.i... job" />
+            <marker date="1522493550665" expanded="true" signature="13372:13403" ph="DELETE FROM " />
+            <marker date="1522493550665" expanded="true" signature="13607:13675" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Pages/jobs.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="175" column="68" lean-forward="true" selection-start-line="175" selection-start-column="68" selection-end-line="175" selection-end-column="68" />
+        <state relative-caret-position="208">
+          <caret line="122" column="58" lean-forward="false" selection-start-line="122" selection-start-column="58" selection-end-line="122" selection-end-column="58" />
           <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-            <marker date="1522490203068" expanded="true" signature="17487:17527" ph="..." />
-            <marker date="1522490203068" expanded="true" signature="19778:19803" ph="..." />
+            <marker date="1522494505966" expanded="true" signature="10690:10730" ph="..." />
+            <marker date="1522494505966" expanded="true" signature="17780:17820" ph="..." />
+            <marker date="1522494505966" expanded="true" signature="20112:20137" ph="..." />
+            <marker date="1522494505966" expanded="true" signature="27964:27977" ph="..." />
+            <marker date="1522494505966" expanded="true" signature="28067:28080" ph="..." />
           </folding>
         </state>
       </provider>
