@@ -24,6 +24,11 @@
         <!--  Paper Dashboard core CSS    -->
         <link href="/paper-assets/css/paper-dashboard.css" rel="stylesheet"/>
 
+        <!-- css for the employee pagination -->
+        <link rel="stylesheet" type="text/css" href="/paper-assets/css/pagination.css">
+
+        <!-- css for search bar -->
+        <link rel="stylesheet" type="text/css" href="/paper-assets/css/search.css">
 
         <!--  CSS for Demo Purpose, don't include it in your project     -->
         <link href="/paper-assets/css/demo.css" rel="stylesheet" />
@@ -52,7 +57,7 @@
                 <div class="sidebar-wrapper">
                     <div class="logo">
                         <a href="" class="simple-text">
-                            Meetly
+                            Meet<span style="color: #eb5e28;font-size: 12px">LY</span>
                         </a>
                     </div>
 
@@ -122,21 +127,6 @@
                         </div>
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        <i class="ti-bell"></i>
-                                        <p class="notification">5</p>
-                                        <p>Notifications</p>
-                                        <b class="caret"></b>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Notification 1</a></li>
-                                        <li><a href="#">Notification 2</a></li>
-                                        <li><a href="#">Notification 3</a></li>
-                                        <li><a href="#">Notification 4</a></li>
-                                        <li><a href="#">Another notification</a></li>
-                                    </ul>
-                                </li>
                                 <li>
                                     <a href="{{ path('logout') }}">
                                         <i class="ti-key"></i>
@@ -213,6 +203,9 @@
 
     <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
     <script src="/paper-assets/js/demo.js"></script>
+
+    <!-- Scroll Bar Javascript -->
+    <script src="/paper-assets/js/scrollbar.js"></script>
 
 
 

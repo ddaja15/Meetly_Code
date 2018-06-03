@@ -85,7 +85,6 @@ class DefaultController extends Controller
         $notFinished = $stmt->fetchAll();
 
 
-
         // Second Chart Query
 
         $sql = "SELECT count(job.id) as closed_jobs, job.user_id as robi, user.name, user.surname, answered_at, (SELECT count(job.id)
@@ -107,7 +106,6 @@ class DefaultController extends Controller
         $top_employees = $stmt->fetchAll();
 
 
-
         // Fourth chart data, Roles and role_count
 
         $sql = "SELECT count(user.id) as role_count, role
@@ -120,7 +118,7 @@ class DefaultController extends Controller
         $stmt->execute();
         $top_roles = $stmt->fetchAll();
 
-        $colors = array('#68B3C8','#F3BB45','#EB5E28','#7AC29A','#7A9E9F','rgba(104, 179, 200, 0.8)','rgba(122, 194, 154, 0.8)');
+        $colors = array('#68B3C8', '#F3BB45', '#EB5E28', '#7AC29A', '#7A9E9F', 'rgba(104, 179, 200, 0.8)', 'rgba(122, 194, 154, 0.8)');
 
         $top_roles_colors = array();
 
@@ -129,8 +127,6 @@ class DefaultController extends Controller
             $role['color'] = $colors[$cnt++];
             array_push($top_roles_colors, $role);
         }
-
-
 
 
         // replace this example code with whatever you need
@@ -143,9 +139,9 @@ class DefaultController extends Controller
                 'recently' => $recently[0]['recently'],
                 'last_week_opened_jobs' => $last_week_opened_jobs,
                 'last_week_closed_jobs' => $last_week_closed_jobs,
-                'finishedBeforeDeadline'=>$finishedBeforeDeadline[0]['finishedBeforeDeadline'],
-                'finishedAfterDeadline'=>$finishedAfterDeadline[0]['finishedAfterDeadline'],
-                'notFinished'=>$notFinished[0]['notFinished'],
+                'finishedBeforeDeadline' => $finishedBeforeDeadline[0]['finishedBeforeDeadline'],
+                'finishedAfterDeadline' => $finishedAfterDeadline[0]['finishedAfterDeadline'],
+                'notFinished' => $notFinished[0]['notFinished'],
                 'top_employees' => $top_employees,
                 'top_roles' => $top_roles,
                 'top_roles_colors' => $top_roles_colors
@@ -172,7 +168,7 @@ class DefaultController extends Controller
     {
 
         $em = $this->getDoctrine()->getManager();
-        $sql="select * from user where is_admin='0'";
+        $sql = "select * from user where is_admin='0'";
         $stmt = $em->getConnection()->prepare($sql);
         $stmt->execute();
         $users = $stmt->fetchAll();
@@ -195,7 +191,7 @@ class DefaultController extends Controller
     {
         // replace this example code with whatever you need
         return $this->render('Pages/user.html.twig', [
-            'user'=>$this->getUser()
+            'user' => $this->getUser()
         ]);
     }
 
@@ -208,20 +204,22 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $users = $em->getRepository('AppBundle:User')->findAll();
         return $this->render('Pages/employee.html.twig', [
-            'users' => $users
+            'users' => $users, 'num2' => 1, 'status' => 0
         ]);
     }
 
-
     /**
-     * @Route("/reports", name="reports")
+     * @Route("/employee/{slug}", name="employeepage")
      */
-    public function reportsAction(Request $request)
+    public function employeeNewAction(Request $request, $slug)
     {
         // replace this example code with whatever you need
-        return $this->render('Pages/reports.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $users = $em->getRepository('AppBundle:User')->findAll();
+        return $this->render('Pages/employee.html.twig', [
+            'users' => $users, 'num2' => $slug, 'status' => 0
+        ]);
     }
-
 
     /**
      * @Route("/add/job",name="addJob")
@@ -250,8 +248,8 @@ class DefaultController extends Controller
         $emp_surname = $data[1];
 
         $user = $this->getDoctrine()->getRepository('AppBundle:User')->findOneBy([
-            'name'=>$emp_name,
-            'surname'=>$emp_surname
+            'name' => $emp_name,
+            'surname' => $emp_surname
         ]);
 
         $job->setUser($user);
@@ -296,7 +294,7 @@ class DefaultController extends Controller
 
         $delete_id = $request->request->get('id');
         $em = $this->getDoctrine()->getManager();
-        $sql="DELETE FROM job WHERE id = $delete_id";
+        $sql = "DELETE FROM job WHERE id = $delete_id";
         $stmt = $em->getConnection()->prepare($sql);
         $stmt->execute();
 
@@ -311,12 +309,12 @@ class DefaultController extends Controller
 
         $emp_id = $request->request->get('id');
         $em = $this->getDoctrine()->getManager();
-        $sql="select * from user where id = $emp_id";
+        $sql = "select * from user wh ere id = $emp_id";
         $stmt = $em->getConnection()->prepare($sql);
         $stmt->execute();
         $user = $stmt->fetchAll();
 
-        return new Response($user[0]['name']." ".$user[0]['surname']);
+        return new Response($user[0]['name'] . " " . $user[0]['surname']);
     }
 
     /**
@@ -333,7 +331,6 @@ class DefaultController extends Controller
 
         return new Response(json_encode($notification));
     }
-
 
 
     /**
@@ -357,7 +354,7 @@ class DefaultController extends Controller
 
         return $this->render('Pages/jobs.html.twig', [
             'jobs' => $jobs,
-			'response' => $jobs[0]['response']
+            'response' => $jobs[0]['response']
         ]);
     }
 
@@ -414,4 +411,140 @@ class DefaultController extends Controller
         return new Response("yes");
     }
 
+    /**
+     * @Route("/add",name="addAction")
+     */
+
+    public function addAction()
+    {
+        return $this->render("/Pages/add.html.twig", ['status' => 3]);
+    }
+
+    /**
+     * @Route("/create",name="cremp")
+     */
+    public function create_new_emp(Request $request)
+    {
+
+        $em = $this->getDoctrine()->getManager();
+        $username = $request->request->get('text-username');
+        $email = $request->request->get('text-email');
+        $name = $request->request->get("text-name");
+        $surname = $request->request->get('text-surname');
+        $oldate = $request->request->get('text-birthday');
+        $newdate = date('Y-m-d', strtotime($oldate));
+        $role = $request->request->get('text-role');
+        $salary = $request->request->get('text-salary');
+        $password = $request->request->get('text-password');
+        $conf_passwor = $request->request->get('text-password-conf');
+        $admin = $request->request->get('text-admin');
+        $phone = $request->request->get('text-phone');
+
+        if ($password == $conf_passwor) {
+            $sql = "insert into user (username,password,name,surname,birthday,email,phone_nr,is_admin,role,salary,created_at,updated_at,last_loggin,fuel_consumption)
+            values ('$username','$password','$name','$surname','$newdate','$email','$phone',$admin,'.$role.',$salary,000-00-00,000-00-00,000-00-00,0.0)";
+            $stmt = $em->getConnection()->prepare($sql);
+            $stmt->execute();
+            return $this->render("/Pages/add.html.twig", ['status' => 1]);
+        } else {
+            return $this->render("/Pages/add.html.twig", ['status' => 0]);
+        }
+
+    }
+
+    /**
+     * @Route("/edit/{slug}",name="editemp")
+     */
+    public function edit_employee($slug)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $sql = "select * from user where id =" . $slug;
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $users = $stmt->fetchAll();
+        return $this->render('/Pages/edit.html.twig', ['users' => $users]);
+    }
+
+    /**
+     * @Route("/edit/conf",name="config")\
+     */
+    public function edit_employee_confirmation(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $username = $request->request->get('text-username');
+        $email = $request->request->get('text-email');
+        $phone = $request->request->get('text-phone');
+        $role = $request->request->get('text-role');
+        $salary = $request->request->get('text-salary');
+        $password = $request->request->get('text-password');
+        $pass_conf = $request->request->get('text-password-confirm');
+        $id = $request->request->get('text-id');
+
+        if ($password == $pass_conf) {
+            $sql = "update user set user.username = $username, user.email = $email, user.phone_nr = $phone, user.role = $role, user.salary = $salary, user.password = $password 
+             where user.id =" . $id;
+            $stmt = $em->getConnection()->prepare($sql);
+            $stmt->execute();
+            return $this->redirectToRoute('employee');
+        } else {
+            $sql = "select * from user where id =" . $id;
+            $stmt = $em->getConnection()->prepare($sql);
+            $stmt->execute();
+            $users = $stmt->fetchAll();
+            $stmt->close();
+
+            return $this->render('/Pages/edit.html.twig', ['users' => $users, 'status' => 0]);
+        }
+
+    }
+
+    /**
+     * @Route("/remove/{slug}",name="rem")
+     */
+    public function removeEmployee($slug)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $sql = "delete from user where user.id=" . $slug;
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        return $this->redirectToRoute('employee');
+
+    }
+
+    /**
+     * @Route("search",name="search")
+     */
+    public function searchEmployee(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $text = $request->request->get('text');
+        $sql = "SELECT * from user WHERE name LIKE '%" . $text . "%' OR email LIKE '%" . $text . "%' OR surname LIKE '%" . $text . "%'";
+
+        $stmt = $em->getConnection()->prepare($sql);
+        $stmt->execute();
+        $user = $stmt->fetchAll();
+
+        return $this->render("/Pages/employee.html.twig", ['users' => $user, 'num2' => 1, 'status' => 1]);
+    }
+
+    /**
+     * @Route("/reports", name="reports")
+     */
+    public function reportsAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        $em = $this->getDoctrine()->getManager();
+        $sql_user = "select * from user where user.is_admin=0";
+        $sql_chief = "select * from user where user.is_admin=1";
+        $stmt1 = $em->getConnection()->prepare($sql_user);
+        $stmt1->execute();
+        $users = $stmt1->fetchAll();
+        $stmt2 = $em->getConnection()->prepare($sql_chief);
+        $stmt2->execute();
+        $chiefs = $stmt2->fetchAll();
+
+        return $this->render('Pages/reports.html.twig', [
+            'users' => $users, 'chiefs' => $chiefs
+        ]);
+    }
 }

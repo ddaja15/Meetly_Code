@@ -26,7 +26,7 @@ class Job
 
     /**
      * @ORM\ManyToOne(targetEntity="User")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(onDelete="SET NULL")
      */
     private $user;
 

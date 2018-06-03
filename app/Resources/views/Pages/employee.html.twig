@@ -1,8 +1,6 @@
 {% extends 'base.html.twig' %}
-
 {% block content %}
-
-        <div class="content">
+    <div class="content">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -11,10 +9,70 @@
                                 <h4 class="title">Employees</h4>
                                 <p class="category">General Information</p>
                             </div>
-                            <div class="content table-responsive table-full-width">
-                                <table class="table table-hover table-striped">
+                            <div>
+                                {% if status == 0 %}
+                                <center>
+                                    <div style="margin-right: 208px">
+                                        <ul class="pagination modal-2">
+                                            {% set start = 1 %}
+                                            {% set minimum = 1 %}
+                                            {% set maximum =  10 %}
+                                            {% set size = users|length %}
+                                            {% set remainder = size % 10 %}
+                                            {% if remainder == 0 %}
+                                                {% set num = size/10 %}
+                                            {% else %}
+                                                {% set num = (size/10)+1 %}
+                                            {% endif %}
+                                            {% if num < maximum %}
+                                                {% set maximum  =  num %}
+                                            {% endif %}
+                                            {% if num2 > maximum and num2 < num %}
+                                                {% set minimum = minimum + 1%}
+                                                {% set maximum = maximum +1 %}
+                                            {% endif %}
+                                            {% if num2 == 1 %}
+                                                <li onclick="prev({{ num2-1 }})" class="disabled"><a href="#">&laquo </a></li>
+                                            {% else %}
+                                                <li onclick="prev({{ num2-1 }})" class="#"><a href="#">&laquo </a></li>
+                                            {%  endif %}
+                                            {% for i in range(minimum,maximum) %}
+                                                {% if i == num2 %}
+                                                    <li id="{{ i }}" class="disabled" onclick="pagination({{ i }}"><a href="#">{{ i }}</a></li>
+                                                {% else %}
+                                                    <li id="{{ i }}" onclick="pagination({{ i }})" class="#"><a href="#"> {{ i }}</a></li>
+                                                {% endif %}
+                                            {% endfor %}
+                                            {% if num > 10 and num2 == num %}
+                                                <li onclick="next({{ num2+1 }})" class="disabled"><a href="#">&raquo;</a></li>
+                                            {% elseif num < 10 and num2 == maximum %}
+                                                <li onclick="next({{ num2+1 }})" class="disabled"><a href="#">&raquo;</a></li>
+                                            {% else %}
+                                                <li onclick="next({{ num2+1 }})" class="#"><a href="#">&raquo;</a></li>
+                                            {% endif %}
+                                        </ul>
+                                    </div>
+                                </center>
+                                {% endif %}
+
+                                </div>
+                                <form method="post" action="{{ path('search') }}">
+                                    <div class="search-new">
+                                        <div class="wrap">
+                                            <div class="search">
+                                                <input type="text" class="searchTerm" placeholder="What are you looking for?" name="text">
+                                                <button type="submit" class="searchButton">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="content table-responsive table-full-width" style="overflow-y: auto;overflow-x: auto">
+                                <table class="table table-hover table-striped" >
                                     <thead>
-										<th>Username</th>
+                                        <th>Username</th>
 										<th>Name</th>
 										<th>Surname</th>
 										<th>Email</th>
@@ -23,41 +81,53 @@
 										<th>Phone Number</th>
 										<th>Last Login</th>
 										<th>Consumption</th>
+                                        <th colspan="2">Settings</th>
                                     </thead>
                                     <tbody>
+
                                     {% for user in users %}
-										<tr>
-											<td>{{ user.username }}</td>
-											<td>{{ user.name }}</td>
-											<td>{{ user.surname }}</td>
-											<td>{{ user.email }}</td>
-											<td>{{ user.role }}</td>
-											<td>{{ user.salary }}</td>
-											<td>{{ user.phoneNr }}</td>
-											<td>{{ user.lastLoggin|date('Y-m-d') }}</td>
-											<td>{{ user.fuelConsumption }}</td>
-										</tr>
+                                        {% if loop.index > (num2-1)*10 and loop.index <= num2*10%}
+                                            <tr>
+                                                <td>{{ user.username }}</td>
+                                                <td>{{ user.name }}</td>
+                                                <td>{{ user.surname }}</td>
+                                                <td>{{ user.email }}</td>
+                                                <td>{{ user.role }}</td>
+                                                <td>{{ user.salary }}</td>
+                                                {% if status == 0 %}
+                                                    <td>{{ user.phoneNr }}</td>
+                                                {% else %}
+                                                    <td>{{ user.phone_nr }}</td>
+                                                {% endif %}
+                                                {% if status == 0 %}
+                                                    <td>{{ user.lastLoggin|date('Y-m-d') }}</td>
+                                                {% else %}
+                                                    <td>{{ user.last_loggin|date('Y-m-d') }}</td>
+                                                {% endif %}
+                                                {% if status == 0 %}
+                                                    <td>{{ user.fuelConsumption }}</td>
+                                                {% else %}
+                                                    <td>{{ user.fuel_consumption }}</td>
+                                                {% endif %}
+
+                                                <td><i class="fa fa-edit" onclick="edit_page({{ user.id }})" style="cursor:pointer;font-size: 22px"></i></td>
+                                                <td><i class="fa fa-times" onclick="rem_page({{ user.id }})" style="cursor:pointer;color: firebrick;font-size: 22px"></i></td>
+                                            </tr>
+                                        {% endif %}
                                     {% endfor %}
                                     </tbody>
                                 </table>
-
                             </div>
+                            <br>
+                            <div><button type="submit" class="btn btn-outline-danger pull-right" onclick="addPage()">Add</button></div>
                         </div>
-                    </div>
-
-
-
+                </div>
                 </div>
             </div>
-        </div>
 
 {% endblock %}
-
 {% block javascripts %}
-
     {{ parent() }}
-
-
     <script>
         $(document).ready(function () {
 
@@ -65,6 +135,32 @@
             $("#employees-active").parent().parent().addClass('active');
 
         });
+
+
+        function addPage(){
+            location.href = "http://localhost:8000/add"
+        }
+
+        function edit_page(id){
+            location.href = "http://localhost:8000/edit/"+id;
+        }
+
+        function rem_page(id) {
+            location.href = "http://localhost:8000/remove/"+id;
+        }
+
+        function prev(num) {
+            location.href = "http://localhost:8000/employee/"+num;
+        }
+
+        function next(num) {
+            location.href = "http://localhost:8000/employee/"+num;
+        }
+
+        function pagination(num) {
+            location.href = "http://localhost:8000/employee/"+num;
+        }
+
     </script>
 
 {% endblock %}
